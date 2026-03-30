@@ -20,7 +20,7 @@
 👉 ВСИЧКО ИДВА ОТ BLOCK 2 (2 ЛИНКА)
 
 - ЛИНК 1 → ДОМАКИН  
-- ЛИНК 2 → ГОСТ  
+- ЛИНК 2 → ГОСТ  ;https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/gibraltar.md
 
 👉 ЧЕТЕНЕТО Е:
 ✔ ЕДНОВРЕМЕННО  
