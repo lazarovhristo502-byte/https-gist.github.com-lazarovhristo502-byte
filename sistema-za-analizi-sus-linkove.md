@@ -19,7 +19,7 @@
 
 👉 ВСИЧКО ИДВА ОТ BLOCK 2 (2 ЛИНКА)
 
-- ЛИНК 1 → ДОМАКИН  ; https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/Latvia.md
+- ЛИНК 1 → ДОМАКИН  https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/jilvinsente.md
 - ЛИНК 2 → ГОСТ  https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/afs.md
 👉 ЧЕТЕНЕТО Е:
 ✔ ЕДНОВРЕМЕННО  
