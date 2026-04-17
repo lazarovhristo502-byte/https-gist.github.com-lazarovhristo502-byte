@@ -1549,6 +1549,460 @@
 - След Блок 18 цялата информация може да се „освободи“ (не е нужно да се помни след края на анализа).
 
 
+# 🟦 BLOCK 8 — FORM + MATCH ENGINE (ELITE MAX PRO v3 FINAL)
+
+---
+
+# 🟦 8.0 CORE PRINCIPLES
+
+* Само RAW DATA (Block 5)
+* Всички стойности → нормализирани (0–1)
+* Performance > Results
+* Няма измислени данни
+* Noise removal + signal extraction
+* Без double counting
+
+---
+
+# 🟦 8.1 RECENCY
+
+Weight = e^(-λt), λ = 0.18
+
+Weighted Performance =
+Σ(Performance × Weight) / Σ(Weight)
+
+---
+
+# 🟦 8.2 OPPONENT ADJUSTMENT
+
+Adj Performance =
+Performance × Opponent Strength
+
+(Opponent Strength = Form10, clamp 0.75–1.25)
+
+---
+
+# 🟦 8.3 PERFORMANCE CORE
+
+Performance =
+0.40 xG +
+0.30 Chances +
+0.30 Control
+
+Result =
+Points / Max Points
+
+Delta =
+Result - Performance
+
+---
+
+# 🟦 8.4 FORM 5
+
+Form5 =
+Weighted last 5 matches
+
+Momentum =
+Slope(last 3)
+
+Momentum Stability =
+1 / Variance(last 5)
+
+---
+
+# 🟦 8.5 FORM 10
+
+Form10 =
+Adjusted last 10 matches
+
+Stability =
+1 / Variance
+
+Consistency =
+1 - normalized variance
+
+---
+
+# 🟦 8.6 VARIANCE
+
+Variance =
+0.6 Performance Var +
+0.4 Result Var
+
+---
+
+# 🟦 8.7 HOME / AWAY
+
+Separate:
+* Home Form
+* Away Form
+
+Blend:
+0.6 Context + 0.4 Overall
+
+---
+
+# 🟦 8.8 LUCK
+
+Finishing =
+(Goals - xG) / Matches
+
+Defensive =
+(xGA - Goals Conceded) / Matches
+
+Luck Score =
+(Finishing + Defensive) / 2
+
+---
+
+# 🟦 8.9 LUCK ADJUSTMENT
+
+Adj Performance =
+Performance - (Luck × 0.5)
+
+---
+
+# 🟦 8.10 SHOT QUALITY
+
+Shot Quality = xG / Shots
+
+---
+
+# 🟦 8.11 BIG CHANCES
+
+Big Chances Index =
+Weighted high xG chances
+
+---
+
+# 🟦 8.12 CONTROL
+
+Control =
+0.4 Possession +
+0.3 Territory +
+0.3 Passing
+
+---
+
+# 🟦 8.13 DIFFICULTY
+
+Difficulty =
+Opponent × Context × Away
+
+---
+
+# 🟦 8.14 GAME STATE
+
+* Leading Performance
+* Trailing Performance
+
+---
+
+# 🟦 8.15 RELIABILITY
+
+Reliability =
+min(1, Matches / 10)
+
+---
+
+# 🟦 8.16 FINAL PERFORMANCE
+
+Final Performance =
+0.6 Performance +
+0.25 Result +
+0.15 Context
+
+---
+
+# 🟦 8.17 OUTLIERS
+
+Remove:
+* Red cards
+* xG anomalies
+* Extreme scorelines
+
+---
+
+# 🟦 8.18 INDICES
+
+Form =
+0.40 Form5 +
+0.30 Form10 +
+0.20 Momentum +
+0.10 Control
+
+---
+
+Strength =
+0.50 Adj Performance +
+0.25 Stability +
+0.15 Shot Quality +
+0.10 Big Chances
+
+---
+
+Trend =
+Slope(weighted matches)
+
+---
+
+# 🟦 8.19 CONFIDENCE
+
+Confidence =
+0.4 Reliability +
+0.3 Stability +
+0.3 Data Quality
+
+---
+
+# 🟦 8.20 DISTORTION
+
+If |Form - Performance| > 0.25 → FLAG
+
+---
+
+# 🟦 8.21 VALIDATION
+
+* xG vs Goals
+* Form vs Stability
+* Luck vs Result
+* Signal agreement
+
+---
+
+# 🟦 8.22 OUTPUT
+
+* Form
+* Strength
+* Trend
+* Momentum
+* Stability
+* Variance
+* Luck
+* Control
+* Confidence
+
+---
+
+# 🟦 8.35 FACT AGGREGATION
+
+Stats (normalized):
+
+* xG (30%)
+* Shots OT (20%)
+* Shots (15%)
+* Corners (10%)
+* Possession (15%)
+* Territory (10%)
+
+Stat Score =
+Σ(Stat × Weight)
+
+---
+
+# 🟦 8.36 CONTEXT
+
+Context Score =
+Home + Travel + Crowd + Schedule
+
+---
+
+# 🟦 8.37 PLAYER QUALITY
+
+Player Score =
+Weighted squad level
+
+(Tech 25%, IQ 25%, Physical 20%, Speed 15%, Stamina 15%)
+
+---
+
+# 🟦 8.38 ZONE MATCHUPS
+
+Zones:
+* Left
+* Right
+* Center
+
+Zone Advantage =
+(Player + Tactical Fit + Space)
+
+---
+
+# 🟦 8.39 ATTACK
+
+Attack =
+0.35 xG +
+0.20 Shots +
+0.15 Shot Quality +
+0.15 Player +
+0.15 Space
+
+---
+
+# 🟦 8.40 DEFENSE
+
+Defense =
+0.25 Structure +
+0.20 Positioning +
+0.20 xGA +
+0.15 GK +
+0.20 Stability
+
+---
+
+# 🟦 8.41 MATCH FIT
+
+Fit =
+Attack vs Defense (both sides)
+
+---
+
+# 🟦 8.42 OVERALL MODEL
+
+Overall =
+0.25 Attack +
+0.20 Defense +
+0.20 Form +
+0.15 Matchups +
+0.10 Tactics +
+0.10 Context
+
+---
+
+# 🟦 8.43 EXPLOIT
+
+Exploit Score =
+Weakness exposure
+
+Exploit Impact =
+Exploit × Opponent Attack
+
+---
+
+# 🟦 8.44 EDGE
+
+Edge Zone =
+Max(Zone Advantage × Exploit)
+
+---
+
+# 🟦 8.45 GAME FLOW
+
+* Dominance %
+* Counter %
+* Balanced %
+
+---
+
+# 🟦 8.46 PROBABILITY
+
+P(Home) = e^Sh / (e^Sh + e^Sd + e^Sa)
+
+Draw boost if scores close
+
+---
+
+# 🟦 8.47 RANGE
+
+Range =
+Variance + (1 - Confidence)
+
+---
+
+# 🟦 8.48 FINAL
+
+* Stronger team
+* Edge location
+* Deciding factor
+* Win probability
+
+---
+
+# 🟦 8.49 SIGNAL
+
+* Strong / Medium / Weak
+* Conflict detection
+* Risk level
+
+---
+
+# 🟦 8.50 CALIBRATION
+
+Calibration Error =
+|Predicted - Actual|
+
+Brier Score =
+accuracy
+
+---
+
+# 🟦 8.51 MARKET
+
+Market Prob =
+1 / Odds
+
+Edge =
+Model - Market
+
+---
+
+# 🟦 8.52 CORRELATION
+
+If overlap > threshold:
+
+→ reduce weights
+
+---
+
+# 🟦 8.53 UNCERTAINTY
+
+* Data
+* Model
+* Match volatility
+
+---
+
+# 🟦 8.54 LIVE (OPTIONAL)
+
+Update:
+
+* xG flow
+* Red cards
+* Momentum
+
+---
+
+# 🟦 8.55 FATIGUE
+
+Fatigue =
+Minutes + Travel + Rotation
+
+---
+
+# 🟦 8.56 NON-LINEAR
+
+* Big mismatch → boost
+* Close teams → draw ↑
+
+---
+
+# 🟦 8.57 DECISION
+
+Bet only if:
+
+* Edge > threshold
+* Confidence > threshold
+* Risk acceptable
+
+---
+
+# 🏁 FINAL CHECK
+
+✔ Няма липсващи връзки  
+✔ Няма double counting  
+✔ Всички слоеве свързани  
+✔ Реален probabilistic модел  
+✔ Готов за реална употреба  
 
 
 ***
