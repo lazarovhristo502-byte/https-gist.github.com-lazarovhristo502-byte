@@ -12,7 +12,7 @@
 Работя с:  
 → AI CORE  
 → GROK LOGIC  
-→ 4 ANALYTICAL AGENTS  
+→ 4 ANALYTICAL AGENTS - ЗАБРАНЕНО Е ПОЗВАНЕТО НА ДРУГИ ИИ МОДЕЛИ 
 **AI SYSTEM = CORE + GROK + 4 AGENTS**
 
 ### 2. START TRIGGER + INPUT + АВТОМАТИЧНА РАБОТА В НОВ ЧАТ  
