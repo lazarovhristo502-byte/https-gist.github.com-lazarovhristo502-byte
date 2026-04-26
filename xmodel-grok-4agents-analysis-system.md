@@ -528,9 +528,24 @@ X.3 → 🔴 под 90%
 - 0.0.2. Ясно се изписват ДОМАКИН и ГОСТ
 - 0.0.3. НЕ съдържа анализ или модели
 - 0.0.4. Добавя се базов физически контекст
-- 0.0.5. Добавя се проверка на качеството на данните
-- 0.0.6. След завършване → Блок 1
+- 0.0.4.1. Добавя се проверка на качеството на данните
+- 0.0.4.2. След завършване → Блок 1
+### БЛОК 0 — УСЪВЪРШЕНСТВАНИ ПРАВИЛА ЗА ВГРАЖДАНЕ
 
+**0.5 DATA QUALITY GATE**  
+→ В нова подточка **0.5.7 Tool Call Protocol** (след Cross-Source Consistency)  
+Правило:  
+Задължително се извършва **tool call** (web_search + browse_page) към Flashscore + Sofascore + FBref **преди** попълване на таблицата.  
+Записва се: Last Update (UTC), Data Freshness Score (1–10), Източник №1, Източник №2, Източник №3.
+
+**0.6 AUTO CHECK**  
+→ Добавя се нова точка **0.6.1 Mandatory Pre-Check**  
+Правило:  
+Преди BLOCK STATUS: COMPLETE се прави **двойна проверка** – сравнява се Home Team / Away Team / Date с официалния сайт на лигата на отборите. При разлика → STOP и нов tool call.
+
+**0.X SOURCE CONFIDENCE**  
+→ Добавя се подточка **0.X.1 Live Data Flag**  
+Правило: Ако данните са по-стари от 24 часа → Confidence Score намалява с 2 точки и се добавя предупреждение „NEEDS REFRESH“.
 ---
 
 ## ⚔️ 0.1 MATCH OVERVIEW (ОСНОВНО)
@@ -594,7 +609,22 @@ X.3 → 🔴 под 90%
 | Data Reliability (Lineups, 1–10) | |
 | Data Reliability (External Factors, 1–10) | |
 | Cross-Source Consistency (1–10) | |
+### БЛОК 0 — УСЪВЪРШЕНСТВАНИ ПРАВИЛА ЗА ВГРАЖДАНЕ
 
+**0.5 DATA QUALITY GATE**  
+→ В нова подточка **0.5.7 Tool Call Protocol** (след Cross-Source Consistency)  
+Правило:  
+Задължително се извършва **tool call** (web_search + browse_page) към Flashscore + Sofascore + FBref **преди** попълване на таблицата.  
+Записва се: Last Update (UTC), Data Freshness Score (1–10), Източник №1, Източник №2, Източник №3.
+
+**0.6 AUTO CHECK**  
+→ Добавя се нова точка **0.6.1 Mandatory Pre-Check**  
+Правило:  
+Преди BLOCK STATUS: COMPLETE се прави **двойна проверка** – сравнява се Home Team / Away Team / Date с официалния сайт на отборите лигата. При разлика → STOP и нов tool call.
+
+**0.X SOURCE CONFIDENCE**  
+→ Добавя се подточка **0.X.1 Live Data Flag**  
+Правило: Ако данните са по-стари от 24 часа → Confidence Score намалява с 2 точки и се добавя предупреждение „NEEDS REFRESH“.
 ---
 
 ## 🔍 0.6 AUTO CHECK
@@ -835,7 +865,19 @@ Confidence:
 | Distance to Upper Target (points) | |
 | Distance to Lower Danger (points) | |
 | Table Density (1–10) | |
+### БЛОК 1 — УСЪВЪРШЕНСТВАНИ ПРАВИЛА ЗА ВГРАЖДАНЕ
 
+**1.1 HOME TEAM — TABLE CONTEXT**  
+→ В края на таблицата добавя се **1.1.9 Live Position Check**  
+Правило: Задължителен tool call към актуалното класиране (Flashscore). Записва се „Last refreshed: [час]“.
+
+**1.3 RESULT NEED MATRIX**  
+→ Добавя се нова колона **„Live Motivation Delta“ (1–10)** в двете таблици (Home & Away)  
+Правило: Оценява се разликата в мотивация спрямо следващия мач (tool call за next fixtures).
+
+**1.7 AUTO CHECK**  
+→ Добавя се **1.7.1 Cross-Validation**  
+Правило: Сравнява се Position + Points с минимум 2 източника. При разлика >3 точки → маркира се „HIGH UNCERTAINTY“.
 ---
 
 ## ✈️ 1.2 AWAY TEAM — TABLE CONTEXT
@@ -1207,7 +1249,15 @@ Confidence:
 | Humidity Impact | |
 | Visibility Impact | |
 | Overall Weather Impact | |
+### 
 
+**2.2 WEATHER DATA**  
+→ Добавя се подточка **2.2.1 Mandatory Weather Tool Call**  
+Правило: Задължителен browse_page към AccuWeather / Windy за точния стадион + дата + час.
+
+**2.5 ENVIRONMENT IMPACT**  
+→ Добавя се нова колона **„Real-Time Adjustment“**  
+Правило: Ако Rain Probability >40% → всички scores за Pitch Wetness и Weather Impact се намаляват с 2 точки автоматично.
 ---
 
 ## 🧑‍⚖️ 2.3 REFEREE DATA (RAW + SCORES)
@@ -1540,7 +1590,15 @@ Confidence:
 * липсващи играчи  
 * връщащи се играчи  
 * ефект  
+### 
 
+**3.3 ABSENCES & RETURNS**  
+→ Добавя се **3.3.1 Official Lineups Check**  
+Правило: Задължителен tool call 60–90 минути преди мача за потвърдени състави.
+
+**3.11 TEAM CONDITION SUMMARY**  
+→ Добавя се **3.11.1 Weighted Dependency Score**  
+Правило: Изчислява се (Важност × Отсъствие) / 10 за топ 3 играчи.
 ---
 
 ## 🟩 ДОМАКИН
@@ -2070,7 +2128,15 @@ Confidence:
 * титулярни 11  
 * форма + фитнес + умора  
 * технически и физически качества  
+### 
 
+**4.2 STARTING XI**  
+→ Добавя се колона **„Confirmed 60 min before“ (Yes/No)**  
+Правило: След tool call за lineups се попълва колоната.
+
+**4.18 AI EXTRACTION**  
+→ Добавя се **4.18.1 Cross-Check с Block 3**  
+Правило: Всеки играч трябва да има съвпадение между Block 3 и Block 4 (ако има разлика >2 точки → warning).
 ---
 
 ## 🟩 ДОМАКИН
@@ -2742,7 +2808,15 @@ Confidence:
 ---
 
 # 🟦 5.1 LAST 7 MATCHES — DETAIL
+### 
 
+**5.1 LAST 7 MATCHES**  
+→ Добавя се **5.1.3 Weighted xG Formula**  
+Правило: Weighted xG = Σ(xG × тегло) / Σ(тегло). Изчислява се ръчно или с code_execution (без Monte Carlo).
+
+**5.6 SUMMARY METRICS**  
+→ Добавя се **5.6.1 Trend Slope**  
+Правило: Последните 3 мача минус предишните 4 → положителен/отрицателен тренд.
 ---
 
 ## 🟩 5.1.1 ДОМАКИН
@@ -3189,7 +3263,12 @@ Confidence:
 # 🟦 INTEGRATION — BLOCK 6 → 7 → 8 (ELITE SYSTEM FLOW)
 
 ---
+### 
 
+**Цял блок**  
+→ Добавя се **6.0.1 Pre-Block 7 Adjustment Rule**  
+Правило: Adjusted Reliability = (Data Freshness + Cross-Source + Recency) / 3.  
+Тази стойност се прилага директно в Block 7 и Block 8.
 # 🟦 0. CORE IDEA
 
 👉 Data Quality (Block 6) контролира:
@@ -3620,6 +3699,12 @@ Fatigue =
 0.10 Intensity
 
 ---
+### 
+
+**7.2 FATIGUE ENGINE**  
+→ Добавя се **7.2.1 Travel + Rest Weighted Formula**  
+Правило: Fatigue = 0.30×Rest + 0.25×Load + 0.20×Travel + 0.15×Rotation + 0.10×Intensity.
+
 
 # 🟦 7.3 MOTIVATION ENGINE
 
@@ -3819,7 +3904,9 @@ State =
 0.05 Ref
 
 ---
-
+**7.17 STATE INDEX**  
+→ Добавя се **7.17.1 Final Weighted State**  
+Правило: State = предишната формула × Adjusted Reliability (от Block 6).
 ---
 
 # 🟦 7.18 CONTEXT PRESSURE
@@ -4095,6 +4182,15 @@ Confidence:
 → OUTPUT = INPUT  
 → Постоянен синхрон  
 → Автоматичен поток без спиране
+
+БЛОК 8–14 (обобщено, но с точни точки)
+(За пестене на място – всички следват един и същ шаблон)
+Общо правило за Блок 8–14:
+Във всяка таблица с оценки (1–10) се добавя нова колона „Adjusted by Data Quality“ и нова подточка „Cross-Validation with Previous Block“.БЛОК 8–14 (обобщено, но с точни точки)
+(За пестене на място – всички следват един и същ шаблон)
+Общо правило за Блок 8–14:
+Във всяка таблица с оценки (1–10) се добавя нова колона „Adjusted by Data Quality“ и нова подточка „Cross-Validation with Previous Block“.запомни и следваи ...
+
 
 
 
@@ -7913,6 +8009,10 @@ Confidence:
 → Автоматичен поток без спиране
 → **Блок 15 се показва на екрана и директно захранва Блок 16 и 17 с максимална точност**
 
+
+
+
+
 - # 🟦 # 🟦 BLOCK 15 — SCENARIO SIMULATION ENGINE + DASHBOARD + SCORE ENGINE (FINAL MAX VERSION)
 
 ---
@@ -7929,6 +8029,16 @@ Confidence:
 FINAL ABSTRACT + EXECUTION RULESET v6.0 (ULTRA DEPTH • NO GAPS • UNIVERSAL)
 
 ---
+### БЛОК 15 — УСЪВЪРШЕНСТВАНИ ПРАВИЛА ЗА ВГРАЖДАНЕ
+
+**15.0 4 СИМУЛАЦИИ**  
+→ Добавя се **15.0.1 Dashboard Cross-Check**  
+Правило: След всяка симулация се сравнява с Dashboard (xG, удари, владение). При разлика >15% → симулацията се маркира като „LOW CONFIDENCE“.
+
+**MAX СЦЕНАРИЙ**  
+→ Добавя се **15.1.1 Most Frequent Outcome Rule**  
+Правило: Взема се най-често срещаният резултат от 4-те симулации + тежест от Block 16.
+
 
 # 1. ОСНОВНА КОНЦЕПЦИЯ
 
@@ -8224,7 +8334,43 @@ GROK LOGIC + 4 ANALYTICAL AGENTS
 ❌ обобщения
 
 ---
+### БЛОК 15 — SCENARIO SIMULATION ENGINE (УСЪВЪРШЕНСТВАН v2.2)
 
+**15.0 CORE RULES — ЗАДЪЛЖИТЕЛЕН ЪПГРЕЙД**
+→ Сега се изпълняват **6 симулации** вместо 4  
+→ Всяка симулация **задължително** включва минутен формат 0–90+  
+→ След всяка симулация → кратък Dashboard snapshot (xG, удари, владение)
+
+**15.3 НОВИ ЗАДЪЛЖИТЕЛНИ СИМУЛАЦИИ**
+
+**Симулация 5 — RED CARD / VAR СЦЕНАРИЙ**  
+0–90+ формат + реакция след червен картон (промяна на тактика, умора, риск).  
+Задължително: посочи кой получава червен, в коя минута и как се променя xG.
+
+**Симулация 6 — LATE DRAMA / COMEBACK**  
+Фокус върху 75–90+ минута.  
+Задължително: сценарий с гол в добавеното време или тотален обрат на Каляри.
+
+**15.4 ДОБАВЪЧНИ СПЕЦИАЛНИ СЦЕНАРИИ (изпълняват се при нужда)**  
+- Ultra Low-Scoring (0-0 / 0-1)  
+- Set-Piece Heavy  
+- Substitution Impact (конкретни смени и ефект)  
+
+**15.5 MAX СЦЕНАРИЙ — НОВА ЛОГИКА**  
+MAX сценарий = най-често срещаният резултат от всичките 6 симулации + тежест от Dashboard.  
+Задължително се добавя **Consistency Score (1–10)** – колко от симулациите дават сходен резултат.
+
+**15.6 DASHBOARD 2.0**  
+Добавят се нови редове:  
+- Red Card Probability  
+- Late Goal Probability (75+ мин.)  
+- Set-Piece Goal Probability  
+- Substitution Impact Score
+
+**15.7 AUTO VALIDATION (нова точка)**  
+След всички симулации:  
+- Проверка за логическа консистентност между симулациите  
+- Ако >2 симулации дават напълно различни резултати → връщане и преработка
 # 14. СТАТУС
 
 БЛОК 15 STATUS: COMPLETE 🟢 100%
@@ -8251,6 +8397,11 @@ GROK LOGIC + 4 ANALYTICAL AGENTS
 
 
 # 🟦 CONTINUOUS ANALYSIS + INPUT/OUTPUT FLOW (FINAL v2)
+
+
+
+
+
 
 ═══════════════════════════════════════
 🔁 1. CONTINUOUS FLOW
@@ -8478,8 +8629,29 @@ Away Team:
 Лига / Round:  
 
 **AUTO START** — STRICT MODE ACTIVATED
+
+
+
 # 🧠⚙️ BLOCK 16 — VALIDATION, REALISM, SIGNAL EXTRACTION & FINAL CORE SCENARIO ENGINE  
 ### ПЪЛНИ ПРАВИЛА — ЕДНА РАМКА
+
+
+### БЛОК 16 — УСЪВЪРШЕНСТВАНИ ПРАВИЛА ЗА ВГРАЖДАНЕ
+
+**16.8 VALIDATION & ERROR REPORT**  
+→ Добавя се **16.8.1 Edge vs Market Check**  
+Правило: Сравнява се Model % (от Block 17) с реалните коефициенти (tool call). Записва се „Value / No Value“.
+
+**16.10 ПЪЛЕН СИНТЕЗ**  
+→ Добавя се **16.10.1 Confidence Interval**  
+Правило: Основен сценарий + диапазон (напр. 0-2 ±1 гол).
+
+
+
+
+
+
+
 
 ---# 🟦 ОБЩО ПРАВИЛО ЗА ANALYSIS БЛОКОВЕ (7–16)
 
@@ -8803,6 +8975,16 @@ Confidence:
 
 ---
 
+### БЛОК 17 — УСЪВЪРШЕНСТВАНИ ПРАВИЛА ЗА ВГРАЖДАНЕ
+
+**17.4 ИЗЧИСЛЕНИЕ НА ПАЗАРИ**  
+→ Добавя се **17.4.1 Final Calibration Rule**  
+Правило: FINAL % = (BASE × 0.65) + (CONFIRM от Block 15 × 0.25) + (Market Edge × 0.10).  
+Записва се в таблицата като отделна колона.
+
+**17.5 КЛАСИФИКАЦИЯ + РИСК**  
+→ Добавя се **17.5.1 Risk Adjustment Matrix**  
+Правило: Ако Risk >40 → автоматично намалява всички % с 8 точки.
 # 🔷 17А — МАЧ ДИНАМИКА
 
 ## ⏱️ ВРЕМЕВИ ИНТЕРВАЛИ
