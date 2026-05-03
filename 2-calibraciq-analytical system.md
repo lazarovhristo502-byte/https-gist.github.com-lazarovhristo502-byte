@@ -171,7 +171,63 @@
 
 Кажи директно — X MODEL v2.6 е **максимално актуален и организиран**. 🚀
 
+**✅ Ето чисто и подредено – само новите добавки в таблицата на Calibration 2.**
 
+### Актуализирана таблица с Active Improvements (Block 0.5.1)
+
+| ID  | Target Block(s)              | Име на подобрението                                   | Как точно се прилага в блока (конкретно)                                                                 | Priority | Status     |
+|-----|------------------------------|-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|----------|------------|
+| 001 | Block 1                      | Dynamic Motivation Multiplier                         | 1.3–1.5x тежест на Motivation Delta за Гост в relegation fight                                           | High     | **Active** |
+| 002 | Block 9+10                   | Counter Efficiency Index                              | Добавя нов score (1–10) в Style Clash и Line Matchup                                                     | High     | **Active** |
+| 003 | Block 15                     | Variance Boost                                        | +20–30% variance в Risk Determination и всички симулации                                                 | High     | **Active** |
+| 004 | Block 13+14                  | Post-Goal Momentum Swing                              | Динамично пренастройване на вероятностите след всеки гол                                                 | High     | **Active** |
+| 005 | Block 11+16                  | Efficiency Calibration (xG → Goals)                   | Калибрационен фактор спрямо историческа реализация                                                        | Medium   | **Active** |
+| 006 | Block 6                      | Clutch / Desperation Factor                           | +15% в Adjusted Reliability за отбори в криза                                                            | High     | **Active** |
+| 007 | Block 17                     | Explicit Upset Flag                                   | Автоматично предупреждение + намаляване на Grok % при висок Desperation                                  | High     | **Active** |
+| **008** | Block 12–14 + 17         | **Late Equaliser / Desperation Draw Risk**            | +15% тежест на „late equaliser risk“ при away teams в борба за точки (75–90+ мин)                        | **High** | **Active** |
+| **009** | Block 9+10 + 15          | **Low-Block Counter Resilience**                      | Автоматичен +1–2 към Counter Efficiency Score при away low-block + high motivation                       | **High** | **Active** |
+| **010** | Block 0.4 + 1 + 7        | **Fatigue × Motivation Interaction Matrix**           | Нов multiplier (1.3–1.5x) при home fatigue (Europa/midweek) + away desperation                           | **High** | **Active** |
+| **011** | Block 12–15              | **Early Goal Chaos Trigger**                          | +15% chaos/variance при rest delta > 2 дни и early phase (0–20 мин)                                      | **High** | **Active** |
+| **012** | Block 8 + 9 + 14         | **Desperation Counter Efficiency Boost**              | +12–15% тежест на counter-efficiency при high motivation away teams                                      | **High** | **Active** |
+| **013** | Block 3 + 7              | **Post-Shock Mental Recovery Score**                  | Нова колона/score (1–10) след early goal — намалява home recovery probability                            | Medium   | **Active** |
+| **014** | Block 17                 | **Automatic Confidence Downscale (Fatigue)**          | -8–12% conviction за home favorites при fatigue delta + relegation away                                  | **High** | **Active** |
+
+---
+
+### Как работим сега, за да **няма подобни грешки**?
+
+С новите правила системата става много по-защитена. Ето как точно ще предотвратяваме грешките от двете калибрации:
+
+**1. Срещу Freiburg–Wolfsburg тип грешка (late draw):**
+- **ID 008** → автоматично дава +15% на late equaliser risk.
+- **ID 009** → засича low-block + counter resilience на госта.
+- В Block 15 симулациите вече задължително включват „desperation draw“ сценарий.
+
+**2. Срещу Aston Villa–Tottenham тип грешка (early upset + fatigue):**
+- **ID 010** → комбинира fatigue на домакина с motivation на госта (най-важното ново правило).
+- **ID 011** → early goal (0–20 мин) автоматично вкарва chaos +15% variance.
+- **ID 012** → desperation counter става по-силен.
+- **ID 013** → след ранен гол Villa-type collapse се моделира.
+- **ID 014** → намалява увереността на модела за home фаворит.
+
+**3. Общи механизми за защита:**
+- Всяко ново правило се споменава **bold** във всеки блок (Block 1–17).
+- Block 0.5 се зарежда **веднага след Block 0** и прилага всички Active подобрения.
+- В Block 17 (финални препоръки) се прилагат **ID 008, 010 и 014** → confidence се намалява автоматично при рискови сценарии.
+- След всеки мач Block 18 автоматично предлага нови ID-та ако се появи нова грешка.
+
+---
+
+Готово!  
+
+Сега копирай таблицата по-горе и я постави в **calibraciq-analytical system.md** на мястото на старата.
+
+Искаш ли да ти дам:
+- Пълния обновен **Block 0.5** като готов текст за копиране?
+- Пример как ще изглежда **Block 1** с новите правила приложени?
+- Или нещо друго?
+
+Кажи директно. 🚀
 
 
 
