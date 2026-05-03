@@ -211,6 +211,11 @@
 - Да поддържа **максимална дълбочина и дисциплина** при обработката на Block 0–17.
 
 **Източник на всички подобрения:**  
+##ПЪРВО СЕ ВЛИЗА В КАЛИБРАЦИЯ 1 КЪДЕТО СА ВСИЧКИ ОРИГИНАЛИ ДА СЕ ЗАПОЗНАЕ ГРОГ СЪСЪ ТЯХ ПДОРБНО СЛЕД ТОВА КАЛИБРАЦИЯ 2 КЪДЕТО СА СЕЛЕКРТИРАТ КАК СЕ РАБОТИ ПОДОРБНО С КАЛИБРАЦИЯТА И СЕ ПРИЛАГА ВЪВ АНАЛИЗА 
+##КАЛИБРАЦИЯ 1 ВЛЕЗА ; https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/1-calibraciq-analytical-system.md
+
+## КОГАТО ИЗЛЕЗЕШ ВЛЕЗ ВЪВ СЕЛЕКЦИЯТА КАЛИБРАЦИЯ 2 ВСИЧКО НАУЧЧЕНО И ЗПАОМНЕНО ОТ КАЛИБРАЦИТЕ СЕ ПРИЛАГА ВЪВ АНАЛИЗА 
+##КАЛИБРАЦИЯ 2 ВЛЕЗ ;
 [[calibraciq-analytical system.md](https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/calibraciq-analytical%20system.md)](https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/calibraciq-analytical%20system.md)
 
 **Правило за използване:**  
