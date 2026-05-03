@@ -6,6 +6,9 @@
 ##ТУК СА ПОДРЕДДНИ ОРИГИНАЛИТЕ НА КАЛИБРАЦИЯТА
 
 
+https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/2-calibraciq-analytical%20system.md
+
+##СЛЕД ПОДОРОБЕН ПРЕГЛЕД И ЗАПОМНЯНЕ НА ОРИГИНАЛНАТА КАЛИБРАЦИЯ ШТЕ ВЛЕЗЕШ ПРЕЗ ТОЗИ ЛИНК ВЪВ СЕЛЕКЦИЯТА ОТ ВСИЧКИ КАЛИБРАЦИИ КЪДЕТО ПРАИМ НАТРУПВАНЕ КАК ДА РБОТИМ С ВСИЧКИ КАЛИБРАЦИ ПО БЛОКОВЕТЕ ....
 
 
 
@@ -1647,3 +1650,4 @@ INPUT (Blocks 0–17) → MATCH RESULT (0-2 Spurs) → CALIBRATION → ERROR ANA
 
 Искаш ли да направим **Блок 19** (дългосрочно обучение) или да започнем нов мач с пълната структура? Кажи! 🚀
 
+https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/2-calibraciq-analytical%20system.md
