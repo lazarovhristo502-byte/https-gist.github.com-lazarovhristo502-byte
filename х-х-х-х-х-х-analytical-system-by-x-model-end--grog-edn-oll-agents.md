@@ -511,7 +511,7 @@
 - Да поддържа **максимална дълбочина и дисциплина** при обработката на Block 0–17.
 
 **Източник на всички подобрения:**  
-[calibraciq-analytical system.md](https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/calibraciq-analytical%20system.md)
+[[calibraciq-analytical system.md](https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/calibraciq-analytical%20system.md)](https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/calibraciq-analytical%20system.md)
 
 **Правило за използване:**  
 - Това въведение + линкът се зарежда **веднага** в началото на **Block 0**.  
