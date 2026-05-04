@@ -8,6 +8,100 @@
 
 
 
+**🟦 X MODEL v2.4 — BLOCK 18 — POST MATCH CALIBRATION ENGINE (FULL SYSTEM)**  
+**Мач: FC Midtjylland vs Viborg FF — 3:3 (04.05.2026)**  
+**Status:** 🟢 **100%** — пълен postmortem анализ на базата на реалния резултат, Block 15–17 и Global State.
+
+### MODULE 18.1 — MATCH BREAKDOWN (EXPECTED vs REALITY)
+
+| Критерий               | Очакване (Model от Block 15/16) | Реалност (Match) | Δ Разлика | Severity (0–5) | Коментар |
+|------------------------|---------------------------------|------------------|-----------|----------------|----------|
+| Краен резултат         | 2-0 / 2-1 (най-вероятни)       | 3-3              | Голям over | 4              | Висока variance — късни голове и хаос |
+| Победител              | Midtjylland (68–75% тежест)     | Draw             | Значителна | 3              | Upset елемент (ID-007) |
+| Голове (брой)          | 2.5–3.0 (Under 3.0 предпочитан)| 6                | +3        | 5              | **Най-голямата грешка** — variance boost недостатъчен |
+| Първи гол (минута)     | 30–45'                          | 33' (Beck)       | Минимална | 1              | Добро попадение |
+| Реакция след гол       | Midtjylland контрол + натиск    | Хаотичен обмен   | Значителна | 4              | Пост-гол momentum swing подценен |
+| Tempo                  | Средно-високо, Midtjylland dictating | Високо, open game | Значителна | 3              | Counter efficiency на Viborg надценена |
+| xG                     | Midtjylland ~1.85 / Viborg ~1.05 | ~1.07 / 1.73 (реално) | Обърнато  | 4              | Реализацията и късните шансове |
+| Владение (%)           | 57–58%                          | ~57%             | Минимална | 0              | Точно |
+| Удари / точни          | 17 / 8                          | 13 / ?           | Леко      | 2              | По-малко удари, но ефективни |
+| Корнери                | 7                               | Не уточнено      | -         | 1              | OK |
+| Картони                | Нисък брой                      | Няколко          | Леко      | 1              | OK |
+| Първо полувреме        | 1-1 / 2-1                       | 2-2              | Значителна | 3              | Хаос в края на полувремето |
+| Второ полувреме        | Midtjylland доминация           | 1-1 (3-2 → 3-3)  | Значителна | 4              | Late chaos |
+| Тактически модел       | Позиционен натиск               | Open, counters   | Значителна | 3              | Style clash подценен |
+| Препоръка (Block 17)   | Midtjylland -0.75 / Under 3.0   | Неуспешна        | -         | 3              | Рискът реализиран |
+
+**Общ Severity Score:** 3.1 / 5 (Нестабилен мач — висок variance)
+
+### MODULE 18.2–18.3 — ERROR CLASSIFICATION
+
+- **MODEL ERROR (висока):** Подценяване на variance и late-game chaos (Block 13/14/15).  
+- **VARIANCE (много висока):** 6 гола в мач с очакван under — класически high-variance сценарий.  
+- **MISSED SIGNAL:** Силен counter efficiency на Viborg + desperation factor (ID-006/007).  
+- **DATA ERROR:** Няма (данните бяха пресни).
+
+**Най-големи проблеми:**  
+1. Недостатъчен Variance Boost в Block 15 (6 гола вместо 2.5–3.5).  
+2. Подценяване на post-goal swings и guest desperation в championship round.
+
+### MODULE 18.4 — WEIGHT ADJUSTMENT (Active Improvements за следващи мачове)
+
+| Фактор                  | Стар Weight | Нов Weight | Δ     | Причина |
+|-------------------------|-------------|------------|-------|---------|
+| Variance / Chaos        | Medium      | **High (+25%)** | ↑     | Късни голове + 3-3 |
+| Guest Desperation / Counter | Medium   | **High**   | ↑     | Viborg показа ефективност |
+| Post-Goal Momentum Swing| Medium      | **Very High** | ↑     | 3-2 → 3-3 |
+| xG → Goals Realization  | Standard    | + Calibration factor | ↑ | Реализацията беше висока |
+| Home Dominance          | High        | Medium     | ↓     | Не се материализира напълно |
+
+**Нови Active Improvements (за Калибрация 1/2):**  
+- **ID-008:** Late Game Chaos Multiplier (+30% variance след 70-та минута в championship мачове).  
+- **ID-009:** Guest Counter Efficiency Index — автоматично +0.3–0.5 към away xG при trailing.  
+- **ID-010:** Explicit "Draw in High-Scoring" Flag в Block 17 при variance > threshold.
+
+### MODULE 18.5–18.7 — CONFIDENCE & TRIGGER EVENTS
+
+- **Confidence Calibration:** Model беше overconfident в home win (68%+). Реално — high variance draw. Намаляваме base confidence с 10–12% за подобни мачове.  
+- **Trigger Events:**  
+  - Ранен гол (33') → хаос вместо контрол.  
+  - Късен гол (89') → класически swing.  
+  - Множество субституции и умора → отвори играта.
+
+### MODULE 18.8–18.9 — TEAM DNA UPDATE
+
+**Midtjylland:** При водене — склонни към отпускане / хаос вместо затваряне (проблем в late game control).  
+**Viborg:** Висока resilience и counter efficiency при trailing — класически "desperation mode" отбор.
+
+### MODULE 18.10–18.12 — KPI & ACTIVE IMPROVEMENTS SUMMARY
+
+- **Обща точност за този мач:** Ниска (поради variance).  
+- **ROI impact:** Under 3.0 и AH -0.75 — загуба.  
+- **Нови Active Improvements:** ID-008, ID-009, ID-010 — ще се заредят в следващи Block 0.7.
+
+**FINAL BLOCK 18 STATUS: COMPLETE** 🟢 **100%**  
+
+Моделът е калибриран. Урокът: **В championship round + равностойни гости — variance boost трябва да е по-агресивен**. Следващият анализ ще бъде по-устойчив към high-scoring draws и late swings.
+
+**Системата продължава да се самоусъвършенства.** 🚀  
+Готов за следващ мач.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 **✅ BLOCK 18 — ENHANCED POST MATCH CALIBRATION & MODEL EVOLUTION ENGINE (v2.8)**  
 **Мач:** SCR Altach vs Wolfsberger AC (4 май 2026)  
 **Реален резултат:** **Altach 1 – 4 Wolfsberger AC**
