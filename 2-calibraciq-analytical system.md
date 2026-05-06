@@ -57,7 +57,99 @@
 
 ---
 
+**✅ КАЛИБРАЦИЯ 2 — ПЪЛЕН СПИСЪК НА РЕШЕНИЯТА (ACTIVE IMPROVEMENTS)**  
+**X MODEL v2.5.10**  
+**Байерн – ПСЖ Postmortem Update**
 
+Ето **всички нови правила**, подредени по ID, с точно **по кои блокове се прилагат** и **как точно** работят в нашия анализ.
+
+### **ID-012 Aggregate Deficit Multiplier**
+- **Блокове:** Block 1, Block 15 (Risk Determination), Block 16 (Таблица 2 & 3)
+- **Как се прилага:**  
+  При aggregate дефицит за домакина → автоматично -20% към home comeback probability + +15% defensive score за госта.  
+  В Block 1 се обновява Result Need Matrix. В Block 15 се отразява в Risk въпроси 1, 2, 8, 18–22.
+
+### **ID-013 Set-Piece Vulnerability Gate**
+- **Блокове:** Block 2, Block 4, Block 15 (Симулации), Block 16 (Таблица 1)
+- **Как се прилага:**  
+  Задължителен tool call (browse_page) за corners conceded/scored преди Block 4.  
+  Ако гостът има >30% corner win rate → +18% impact в симулациите и се добавя в Таблица 1 (корнери) и Таблица 3.
+
+### **ID-014 Early Counter Threat Weight**
+- **Блокове:** Block 3, Block 4, Block 15 (всички симулации)
+- **Как се прилага:**  
+  Топ 3 counter дуо получават +25% individual impact score.  
+  Автоматично генерира минимум 2 симулации с early counter goal (0–15').
+
+### **ID-015 Mandatory Early Goal Scenarios**
+- **Блокове:** Block 15 (Симулации 0–6)
+- **Как се прилага:**  
+  **Задължително** минимум **3 от 6** симулации започват с гол за госта до 15'.  
+  Добавя „Momentum Killer“ параметър (-0.8 xG за домакина след early goal) във всяка засегната симулация.
+
+### **ID-016 Low-Block Aggregate Resilience**
+- **Блокове:** Block 15 (Risk 18–22, Симулации), Block 16 (Таблица 3)
+- **Как се прилага:**  
+  При aggregate lead за госта → +18% defensive score + автоматично увеличена вероятност за low-block сценарий.  
+  Влияе директно на тип мач и вариантите в Таблица 3.
+
+### **ID-017 Realistic Variant Expansion**
+- **Блокове:** Block 16 (Таблица 3)
+- **Как се прилага:**  
+  Задължително 2 варианта с early away goal + 2 варианта с set-piece dominance в Таблица 3.  
+  Всички варианти трябва да са grounded в реални tactical данни от Block 15.
+
+### **ID-018 Game State Transition Gate**
+- **Блокове:** Block 15 (всички симулации след гол), Block 17 (препоръки)
+- **Как се прилага:**  
+  След early away goal → автоматично xG намаление с 0.8–1.0 за домакина.  
+  Променя препоръките в Block 17 (напр. по-ниска стойност на Over 3.5, по-висока на Under).
+
+### **ID-019 Pre-Match Live Refresh Protocol**
+- **Блокове:** Block 0 (преди старт), Block 3, Block 4
+- **Как се прилага:**  
+  Задължителен browse_page на Sofascore/Flashscore **60–90 мин преди мача**.  
+  Ако липсва → Adjusted Reliability -15%. Използва се за lineups, injuries и tactical news.
+
+### **ID-020 Knockout Second Leg Bias Correction**
+- **Блокове:** Block 0.7 (Calibration), Block 1, Block 15, Block 16
+- **Как се прилага:**  
+  В полуфинал/финал при aggregate deficit → -15% home edge.  
+  Прилага се още в Block 0.7 и се отразява в Motivation и Risk.
+
+### **ID-021 Hot Player in Knockout Multiplier**
+- **Блокове:** Block 3, Block 4, Block 15 (Симулации)
+- **Как се прилага:**  
+  Играч с 2+ гола/асистенции в първия мач → +22% individual impact score.  
+  Автоматично се отразява в key player context и симулациите.
+
+### **ID-022 Dynamic Market Adjustment Post-Early Goal**
+- **Блокове:** Block 17 (препоръки), Block 15 (Dashboard)
+- **Как се прилага:**  
+  След early away goal → автоматична преоценка на пазарите (напр. +0.5 AH за госта или Under 3.5 получават по-висока стойност).
+
+---
+
+### **ДОПЪЛНИТЕЛНИ СИСТЕМНИ ПОДОБРЕНИЯ (Глобални)**
+
+- **Global Momentum Killer Flag**  
+  **Блокове:** Block 15  
+  **Как:** Ако гост има lethal counter дуо → +30% variance в симулациите.
+
+- **Finishing Regression v2**  
+  **Блокове:** Block 15, Block 16  
+  **Как:** При overperformance в първи мач → -0.8 xG в реванша.
+
+- **New Double-Check Gate**  
+  **Блокове:** Преди Block 16  
+  **Как:** Автоматична проверка за early goal risk + set-piece imbalance.
+
+---
+
+**Status:** 🟢 **100%**  
+Всички тези правила са готови за директно копиране в **Калибрация 2** и ще се прилагат **автоматично** във всеки следващ анализ от Block 0.7 нататък.
+
+Ако искаш таблица с приоритет (кой ID е най-важен) или да ги групирам по блок – кажи.
 
 **✅ ИЗВАДИХ ОТ ЛИНК 1 (Калибрация 1) — 6 НОВИ КАЛИБРАЦИИ**
 
