@@ -57,6 +57,72 @@
 
 ---
 
+
+
+**✅ ИЗВАДИХ ОТ ЛИНК 1 (Калибрация 1) — 6 НОВИ КАЛИБРАЦИИ**
+
+Ето ги **готовите решения** в чист Markdown формат, точно както са в Калибрация 2:
+
+### **6 НОВИ КАЛИБРАЦИИ ОТ КАЛИБРАЦИЯ 1**
+
+**ID-022 — Early Away Goal Trigger**  
+**Target Blocks:** 7, 12, 13, 14, 15, 17  
+**Какво се променя по блоковете:**  
+- Block 7 + Block 12: +28% chaos factor при гол за госта < 30'  
+- Block 13–14: Автоматично пренастройване на phase probabilities към по-висока variance  
+- Block 15: Всички симулации се пренасочват към открит сценарий  
+- Block 17: BTTS и Over 2.5 сигналите се усилват автоматично  
+
+**ID-036 — Late Game Chaos Multiplier**  
+**Target Blocks:** 12, 13, 14, 15, 17  
+**Какво се променя по блоковете:**  
+- Block 12–13: +25% variance след 70' минута при close score  
+- Block 14: +18% probability за гол в 75–90+  
+- Block 15: MAX симулацията получава Late Swing boost  
+- Block 17: Over 2.5 и BTTS стават приоритетни сигнали + повече late swing варианти в Table 2  
+
+**ID-019 — Playoff / Knockout Volatility Gate**  
+**Target Blocks:** 1, 11, 14, 15, 16, 17  
+**Какво се променя по блоковете:**  
+- Block 1 + Block 11: -18% тежест на Under в knockout мачове  
+- Block 14–15: +15% BTTS / Over probability  
+- Block 16: Table 3 генерира по-високи максимални варианти  
+- Block 17: Over 2.5 получава по-висока тежест  
+
+**ID-045 — Desperation Reaction Boost**  
+**Target Blocks:** 1, 7, 11, 15  
+**Какво се променя по блоковете:**  
+- Block 1 + Block 7: +22% motivation delta при изоставане за отбори в борба за цел  
+- Block 11: Увеличаване на comeback potential  
+- Block 15: Comeback симулациите се усилват  
+- Block 17: Активира BTTS или comeback хендикап сигнал  
+
+**ID-006 — Early Goal Control Boost**  
+**Target Blocks:** 13, 14, 15, 17  
+**Какво се променя по блоковете:**  
+- Block 13–14: + тежест на „Control + Hold“ при гол < 45' за фаворита  
+- Block 15: Намалява variance в late game  
+- Block 17: Under 2.5 или -0.75 хендикапът става по-силен  
+
+**ID-008 — Decisive SF Home Stability**  
+**Target Blocks:** 7, 12, 15, 16, 17  
+**Какво се променя по блоковете:**  
+- Block 7 + Block 12: +18% тежест на lead preservation в полуфинали  
+- Block 15: MAX симулацията се насочва към контролиран резултат  
+- Block 16–17: -0.75 / -1.0 хендикапът става основен сигнал  
+
+---
+
+**Готово за директно добавяне.**  
+Искаш ли да ги вкарам в **Block 0.7 Visible Calibration Gate** за следващия анализ?
+
+
+
+
+
+
+
+
 ### **X MODEL v2.6 — ПОДРЕДЕНА КАЛИБРАЦИЯ ПО БЛОКОВЕ**  
 **(пълна, актуална, с всички post-mortem insights от линка)**
 
