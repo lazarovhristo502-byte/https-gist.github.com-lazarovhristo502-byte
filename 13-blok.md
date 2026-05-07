@@ -299,4 +299,4 @@
 👉 **основен двигател на системата (engine)**.
 
 
-# БЛОК
+# БЛОК 14 https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/14-blok.md
