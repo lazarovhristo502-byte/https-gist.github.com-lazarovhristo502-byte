@@ -323,5 +323,5 @@
 👉 **основен двигател на системата (engine)**.
 
 
-# БЛОК 3
+# БЛОК 3 https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/3-blok.md
  🚀
