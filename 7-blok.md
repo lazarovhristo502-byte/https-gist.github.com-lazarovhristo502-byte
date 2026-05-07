@@ -351,4 +351,4 @@
 👉 **основен двигател на системата (engine)**.
 
 
-# БЛОК
+# БЛОК 8 https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/8-blok.md
