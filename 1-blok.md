@@ -282,7 +282,7 @@
 
 
 
-👉 да вградя това правило вътре в целия MASTER документ така, че да стане **основен двигател на системата (engine)**.
+👉 **основен двигател на системата (engine)**.
 
 
 # БЛОК 2 https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/2-blok.md
