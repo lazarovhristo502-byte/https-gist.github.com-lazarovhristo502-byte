@@ -160,5 +160,5 @@
 ✅ Grok следва точно стрелките. Не прескача нито една точка.
 Ако открие пропуск → автоматично се връща и обработва само него, след което продължава напред.
 
-##КОГАТО БЛОК 0 Е АНАЛИЗАРАН НА 100 ПРОЦЕНТА ВЛИЗАШ ВЪВ ЛИНКА НА БЛОК 1 > https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/1-blok.md
+##КОГАТО БЛОК 0 Е АНАЛИЗАРАН НА 100 ПРОЦЕНТА ВЛИЗАШ ВЪВ ЛИНКА НА БЛОК 1 АНАЛИЗИРАШ ПАК НА 100 ПРОЦЕНТА ВЪТРЕШНО НА ЕКРАНА СЕ ПОЗКАВА САМО ЧЕ РАБОТИШ ПО БЛОКОА И КОЯ ТОЧКА И НАКРАЯ СТАТУСА НА ЗАВЪРШЕНИЯ АНАЛИЗ НА ДАДЕНИЯ БЛОК ВСИЧКО СЕ ЗАПАМЕТЯВА  > > https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/1-blok.md
 
