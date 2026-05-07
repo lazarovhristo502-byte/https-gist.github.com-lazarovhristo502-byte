@@ -1,1 +1,116 @@
-blok 8 info za futbol 
+🟦 X MODEL v2.4 — БЛОК 8 — TEAM STRENGTH & FORM ENGINE
+═══════════════════════════════════════════════════════════════════════════════
+🔷 8.0 CORE RULES (ВАЖАТ ЗА ЦЕЛИЯ БЛОК)
+🟢 Блок 8 определя реалната сила на отбора, текущата форма и комбинираната мощ (Adjusted Strength & Form).
+🔴 ЗАБРАНЕНО: директни прогнози за резултат или head-to-head.
+🟢 Всичко се обработва **точка по точка** по стрелките.
+🟢 След всяка точка → Status Marker
+🟢 След целия блок → DOUBLE CHECK + Global State Update
+🟢 Използва данните от Блок 0–7 (Global State + Adjusted Reliability)
+
+🔷 ВЛИЗАНЕ В БЛОК 8
+1. Получава всички данни от Блок 0–7 (Global State + Adjusted Reliability)
+   ↓
+2. 🛠️ ЗАДЪЛЖИТЕЛНИ TOOL CALLS 
+   - web_search + browse_page → актуални form stats, head-to-head strength, recent trends
+   - code_execution → strength formulas и weighting
+   ↓
+3. Започва обработка по стрелките (не прескача нищо)
+
+🔷 ОБРАБОТКА — ПОТОК НА БЛОК 8
+
+1️⃣ 8.1 BASE STRENGTH ASSESSMENT
+   ↓
+   | Показател                    | Home | Away | Adjusted by Reliability | Status |
+   |------------------------------|------|------|-------------------------|--------|
+   | Squad Quality (1–10)         |      |      |                         | 🟢     |
+   | Tactical Strength (1–10)     |      |      |                         | 🟢     |
+   | Physical Strength (1–10)     |      |      |                         | 🟢     |
+   | Attacking Strength (1–10)    |      |      |                         | 🟢     |
+   | Defensive Strength (1–10)    |      |      |                         | 🟢     |
+   | Overall Base Strength (1–10) |      |      |                         | 🟢     |
+
+2️⃣ 8.2 CURRENT FORM STRENGTH (от Блок 5)
+   ↓
+   | Показател                    | Home | Away | Status |
+   |------------------------------|------|------|--------|
+   | Weighted Form (last 7)       |      |      | 🟢     |
+   | Recent Trend Slope           |      |      | 🟢     |
+   | Home/Away Form Split         |      |      | 🟢     |
+   | Form Consistency             |      |      | 🟢     |
+
+3️⃣ 8.3 ADJUSTED FORM & STRENGTH (Adjusted by Reliability)
+   ↓
+   - Adjusted Form (Home) = Base Form × Adjusted Reliability
+   - Adjusted Form (Away) = Base Form × Adjusted Reliability
+   - Combined Strength (Home) = 
+   - Combined Strength (Away) = 
+
+4️⃣ 8.4 SYNERGY BETWEEN STATE & STRENGTH (от Блок 7)
+   ↓
+   | Фактор                       | Home | Away | Impact (1–10) | Status |
+   |------------------------------|------|------|---------------|--------|
+   | State × Strength Synergy     |      |      |               | 🟢     |
+   | Fatigue Impact on Strength   |      |      |               | 🟢     |
+   | Mental Impact on Strength    |      |      |               | 🟢     |
+
+5️⃣ 8.5 VARIANCE & STABILITY
+   ↓
+   | Показател                    | Home | Away | Status |
+   |------------------------------|------|------|--------|
+   | Performance Variance         |      |      | 🟢     |
+   | Stability Score (1–10)       |      |      | 🟢     |
+   | Ceiling Potential            |      |      | 🟢     |
+   | Floor Potential              |      |      | 🟢     |
+
+6️⃣ 8.6 WEAK AREAS & EXPLOITABLE POINTS
+   ↓
+   **ДОМАКИН**
+   | Слаба зона          | Risk Level (1–10) | Status |
+   |---------------------|-------------------|--------|
+   
+   **ГОСТ**
+   | Слаба зона          | Risk Level (1–10) | Status |
+
+7️⃣ 8.7 AI EXTRACTION & KEY INSIGHTS
+   ↓
+   - Най-силните страни на всеки отбор
+   - Най-големите слабости
+   - Как формата и състоянието взаимодействат
+   - Препоръки за Блок 10, 11, 12 и 15
+
+8️⃣ 8.8 SOURCE CONFIDENCE
+   ↓
+   | Поле                    | Стойност |
+   |-------------------------|----------|
+   | Общ Strength Confidence | __ /10   |
+   | Коментар                |          |
+
+🔷 DOUBLE CHECK & VALIDATION (8.9)
+9️⃣ 8.9 AUTO VALIDATION
+    - Всички strength и form компоненти оценени → ✅
+    - Adjusted Reliability приложен → ✅
+    - Cross-check с Блок 5, 6 и 7 → ✅
+    - Логическа консистентност → ✅
+
+🔷 ИЗЛИЗАНЕ ОТ БЛОК 8
+10️⃣ Global State Update → всички оценки, Adjusted Strength и insights се записват
+    ↓
+11️⃣ Handover Summary към Блок 9:
+     - Adjusted Form & Strength
+     - Synergy & Variance
+     - Weak Areas & Exploitable Points
+     - AI Extraction & Insights
+    ↓
+12️⃣ FINAL DOUBLE CHECK
+     - Ако всичко е 🟢 → BLOCK 8 STATUS: COMPLETE
+     - Ако има 🔴 пропуск → 🔄 АВТОМАТИЧНО ВРЪЩАНЕ
+    ↓
+13️⃣ Предаване към Блок 9 (автоматично)
+
+🔷 BLOCK 8 STATUS
+**BLOCK 8 STATUS: COMPLETE** 🟢 100%
+
+═══════════════════════════════════════════════════════════════════════════════
+✅ Grok следва точно стрелките. Adjusted Reliability и State от предишните блокове се прилагат автоматично.
+
