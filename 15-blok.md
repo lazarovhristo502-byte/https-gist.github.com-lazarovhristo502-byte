@@ -824,4 +824,4 @@ Grok + агентите следват **точка по точка**.
 👉 **основен двигател на системата (engine)**.
 
 
-# БЛОК 
+# БЛОК 16 https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/16-blok.md
