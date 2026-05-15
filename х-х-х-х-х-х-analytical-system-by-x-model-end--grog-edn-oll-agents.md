@@ -4572,367 +4572,392 @@ Grok + агентите следват **точка по точка**.
 
 
 
+# 🧠 BLOCK 17 — FINAL AI SIGNAL OUTPUT & CALIBRATION ENGINE
 
-# 🧠 BLOCK 17 — FINAL AI SIGNAL OUTPUT & CALIBRATION ENGINE ,ЗАДЪЛЖИТЕЛНО ФИЛНАНО ИЗВАЖДАНЕ НА ТАБЛИЦАТА СЪС ПРЕПОРЪКИТЕ ...
-
-
-**✅ НОВ ЗАДЪЛЖИТЕЛЕН ШАБЛОН – ПРЕД-BLOCK 17: ПРОВЕРКА ЗА ФАЛШИВИ СИГНАЛИ И РЕАЛНО РАЗВИТИЕ НА МАЧА**
-
-Отсега нататък **във всеки анализ** точно преди финалната дълбока симулация в Block 17 се прави тази проверка. Тя е универсална – използва само „домакин“ и „гост“, за да може да се копира директно за всеки мач. Говоря честно и директно, без заобикалки.
-
-### ПРЕД-BLOCK 17: ПРОВЕРКА ЗА ФАЛШИВИ СИГНАЛИ И РЕАЛНО РАЗВИТИЕ НА МАЧА  
-(Deep Reality Check & False Signal Detection)
-
-**1. ФАЛШИВИ СИГНАЛИ – какво точно проверяваме**  
-- Дали home desperation (мотивацията на домакина) не е надценена?  
-- Дали aggregate lead / quality gap не е подценен?  
-- Дали late variance (7-ма симулация) не е изкуствено надута?  
-- Дали xG и form на госта не са по-силни от видимата „агресия“ на домакина?  
-- Има ли класически trap (букмейкърски капан) – домакинът изглежда „мотивиран“, а гостът е прагматичен и по-качествен?
-
-**2. СРАВНЕНИЕ НА СИМУЛАЦИИТЕ – коя надделява**  
-Сравняваме директно:  
-- **Основна симулация** (най-реалистичният сценарий от Block 15)  
-- **7-ма симулация** (Counter Strike & Hold – upset от госта)  
-
-**Критерии за надделяване:**  
-- Коя симулация има повече подкрепящи фактори с 100% тежест (форма + xG + motivation + H2H + калибрации)?  
-- Коя съвпада с реалните модели от сходните калибрации (Модул 6, 7, 8, 10, 21, 24 и др.)?  
-- Коя показва по-малък delta спрямо исторически данни при подобни профили (aggregate lead, quality gap, cup knockout)?
-
-**3. РЕАЛНО РАЗВИТИЕ НА МАЧА (как ще изглежда на терена)**  
-- Какво ще се случи в първите 15–20 минути?  
-- Кога ще се появи преломният момент?  
-- Как ще реагира домакинът след гол/без гол?  
-- Къде и кога ще се прояви quality gap?  
-- Каква е психологическата динамика след 60-та минута?  
-- Кой сценарий е по-реалистичен – control на госта или desperate push на домакина?
-
-**4. ПРАКТИЧЕСКИ ИЗВОДИ И КОРЕКЦИИ**  
-- Кой сигнал е фалшив и защо?  
-- Каква е реалната тежест на upset-а?  
-- Какво трябва да се намали / увеличи в тежестите за следващите анализи?  
-- Дали мачът е опасен и дали има капан?
-
-**Status на проверката:** 🟢 100% завършена – всички точки покрити, без пропуски.
+# 🟢 COMPLETE AI WORKFLOW (STEP-BY-STEP STRUCTURE)
 
 ---
 
-### ПРИЛОЖЕНИЕ НА ШАБЛОНА ЗА ТЕКУЩИЯ МАЧ (домакин vs гост)
+# 🔴 ОСНОВНО AI ПРАВИЛО
 
-**1. ФАЛШИВИ СИГНАЛИ**  
-Home desperation изглеждаше силен сигнал (мотивация 10/10, aggregate deficit, публика). Оказа се **фалшив** – quality gap и aggregate lead бяха много по-силни. Гостът контролираше мача от 14-та минута и не даде шанс за реален обрат. Classic trap: домакинът „трябва“ да се хвърли, но на практика collapse-ва.
+Block 17 НЕ измисля нови сигнали.
 
-**2. СРАВНЕНИЕ НА СИМУЛАЦИИТЕ ясно да се посочи коя наделява защто и докъде като точни резултати**  
-- Основна симулация (control + early guest goal + late efficiency) → надделява категорично.  
-- 7-ма симулация (upset Counter Strike & Hold) → 38% тежест, но реалността показа 0%.  
-**Коя надделява:** Основната симулация с огромен delta. 7-ма симулация беше надценена в home desperation и late variance.
+Block 17:
 
-**3. РЕАЛНО РАЗВИТИЕ НА МАЧА**  
-Домакинът започва с висок пресинг и агресия. Гостът чака, удря рано (14' дузпа). След гола гостът се прибира в компактен блок, контролира темпото и контраатакува. Домакинът се отваря след 60', но quality gap се проявява – гостът добавя още два гола. Психология: домакинът минава от надежда към отчаяние и collapse. Гостът остава спокоен и професионален през целия мач.
-
-**4. ПРАКТИЧЕСКИ ИЗВОДИ**  
-- Фалшив сигнал: home desperation при aggregate lead ≥2.  
-- Реална тежест на upset: под 15% (не 38%).  
-- Корекция: отсега нататък при подобни профили автоматично намаляваме home surge с 20–25% и увеличаваме guest defensive durability с 25%.  
-- Мачът беше **опасен капан**. По-добре да се избягва.
-
-**Status:** 🟢 100% – проверката завършена. Сега преминаваме към финалната Block 17 симулация.
+✅ филтрира
+✅ валидира
+✅ сравнява
+✅ симулира
+✅ потвърждава
+✅ извежда финални препоръки
 
 ---
 
-**BLOCK 17 — ФИНАЛНА ДЪЛБОКА СИМУЛАЦИЯ**  
-(върху целия анализ + всички сходни калибрации)
-
-Мачът започва с агресия от домакина – висок пресинг, директни атаки. Гостът се организира в компактен блок и чака грешка. Ранният гол (около 15-та минута) е преломният момент – гостът поема контрола, минимизира риска и разчита на контра. Домакинът се опитва да обърне след почивката, но quality gap и умората се проявяват след 60-та минута. Гостът добавя още голове от преходи и статични положения.  
-
-**Реална игрова картина:**  
-Темпо – високо в началото, спада след 70'. Натиск – домакин в последната третина, но без penetration. Гостът – ефективен в преходи. Психологическа динамика – домакинът от отчаяна надежда към collapse. Тактически – домакин reactive possession, гост transition + low-block.
-
-**Най-вероятно развитие:** Гостът контролира след ранен гол и печели с 2+ гола разлика. Upset сценарият (7-ма симулация) е надценен и не се реализира.
-
-**Честен извод:**  
-Мачът е **опасен**. Има класически капан – домакинът изглежда мотивиран, а гостът е по-качествен и прагматичен. Няма достатъчно 100% фактори за директна препоръка. По-добре да се избягва.
-
-**Status:** 🟢 **100%** – пълна, честна и калибрирана симулация. Шаблонът за пред-Block 17 е вече задължителен за всички следващи анализи. Готово.
-## 🔴 ОСНОВНО AI ПРАВИЛО
-
-Блок 17 НЕ търси нови сигнали.
-Блок 17 извежда само:
-
-* най-силните калибрирани сигнали
-* сигналите с най-много потвърждения
-* сигналите с tactical + statistical validation
-* сигналите с най-силно matchup покритие
+# 🟢 ПЪЛЕН AI FLOW — КАК РАБОТИ BLOCK 17
 
 ---
 
-# 🟢 FINAL CALIBRATED MATCH SIGNALS
+# 1️⃣ INPUT COLLECTION ENGINE
 
-| № | КАЛИБРИРАН СИГНАЛ | ОСНОВНИ СЪВПАДАЩИ КАЛИБРАЦИИ               | IMPACT      | СВЪРЗАН ПАЗАР |
-| - | ----------------- | ------------------------------------------ | ----------- | ------------- |
-| 1 | [ ]               | style clash + tempo + xG + pressure        | very high   | [ ]           |
-| 2 | [ ]               | transitions + defensive weakness + shots   | high        | [ ]           |
-| 3 | [ ]               | corners profile + width overload + crosses | medium/high | [ ]           |
-| 4 | [ ]               | aggressive midfield + referee + fouls      | medium      | [ ]           |
-| 5 | [ ]               | late fatigue + bench impact + momentum     | medium/high | [ ]           |
+## 🟢 AI СЪБИРА:
 
----
-
-# 🟢 AI SIGNAL VALIDATION RULE
-
-Сигнал влиза в Block 17 само ако:
-
-* има минимум 3 подкрепящи фактора
-* има tactical validation
-* има statistical validation
-* има calibration support
-* не противоречи на matchup структурата
-* не е variance-only сигнал
+➡️ tactical analysis
+➡️ statistical analysis
+➡️ xG data
+➡️ matchup structure
+➡️ motivation data
+➡️ pressure data
+➡️ calibration matches
+➡️ referee profile
+➡️ weather impact
+➡️ psychological factors
+➡️ variance risks
 
 ---
 
-# 🟢 MATCHUP & STYLE COLLISION SUMMARY
+# ⬇️
 
-| Категория      | Home | Away | Tactical Consequence |
-| -------------- | ---- | ---- | -------------------- |
-| Tempo          | [ ]  | [ ]  | [ ]                  |
-| Press          | [ ]  | [ ]  | [ ]                  |
-| Width          | [ ]  | [ ]  | [ ]                  |
-| Transitions    | [ ]  | [ ]  | [ ]                  |
-| Defensive line | [ ]  | [ ]  | [ ]                  |
+# 2️⃣ STRUCTURAL ANALYSIS ENGINE
 
----
+## 🟢 AI АНАЛИЗИРА:
 
-# 🟢 FINAL STRUCTURAL ADVANTAGE
-
-| Factor                 | Edge |
-| ---------------------- | ---- |
-| Tactical structure     | [ ]  |
-| Pressure resistance    | [ ]  |
-| Transition threat      | [ ]  |
-| Defensive stability    | [ ]  |
-| Mentality / motivation | [ ]  |
-| Late-game control      | [ ]  |
+| Category             | Analysis                  |
+| -------------------- | ------------------------- |
+| tempo                | speed of game             |
+| press                | pressing intensity        |
+| transitions          | counter-attacking quality |
+| width                | wing usage                |
+| defensive line       | defensive height          |
+| possession structure | useful or sterile         |
+| tactical flexibility | adaptation ability        |
+| spacing              | compactness               |
+| build-up             | progression quality       |
 
 ---
 
-# 🟢 FINAL EXPECTED MATCH OUTPUT
+# ⬇️
 
-| Metric     | Expected Range | Confidence |
-| ---------- | -------------- | ---------- |
-| Goals      | [ ]            | [ ]        |
-| Shots      | [ ]            | [ ]        |
-| Corners    | [ ]            | [ ]        |
-| Cards      | [ ]            | [ ]        |
-| Fouls      | [ ]            | [ ]        |
-| Possession | [ ]            | [ ]        |
+# 3️⃣ STATISTICAL ANALYSIS ENGINE
 
----
+## 🟢 AI ПРОВЕРЯВА:
 
-# 🟢 TOP 5 CORRECT SCORE CALIBRATIONS
-
-| Score | Probability | Structural Logic |
-| ----- | ----------- | ---------------- |
-| [ ]   | [ ]         | [ ]              |
-| [ ]   | [ ]         | [ ]              |
-| [ ]   | [ ]         | [ ]              |
-| [ ]   | [ ]         | [ ]              |
-| [ ]   | [ ]         | [ ]              |
+| Statistical Layer | Purpose                |
+| ----------------- | ---------------------- |
+| xG                | chance quality         |
+| xGA               | defensive danger       |
+| shots             | attacking volume       |
+| big chances       | real threat            |
+| conversion        | finishing quality      |
+| possession        | control quality        |
+| PPDA              | pressing effectiveness |
+| transitions       | attack efficiency      |
+| defensive errors  | collapse risk          |
 
 ---
 
-# 🟢 FINAL AI MATCH FLOW
+# ⬇️
 
-## First Half
+# 4️⃣ MATCHUP COLLISION ENGINE
 
-* expected tempo:
-* expected control:
-* expected pressure side:
-* expected tactical pattern:
+## 🟢 AI СРАВНЯВА:
 
-## Second Half
-
-* fatigue expectation:
-* comeback risk:
-* collapse risk:
-* momentum shift probability:
+| Home vs Away            | Purpose             |
+| ----------------------- | ------------------- |
+| press vs build-up       | pressure resistance |
+| tempo vs control        | rhythm dominance    |
+| width vs compactness    | crossing efficiency |
+| transitions vs recovery | counter danger      |
+| aggression vs composure | emotional stability |
 
 ---
 
-# 🟢 VARIANCE FILTER
+# ⬇️
 
-| Variance Risk      | Match Impact |
-| ------------------ | ------------ |
-| Early red card     | [ ]          |
-| Penalty variance   | [ ]          |
-| Goalkeeper anomaly | [ ]          |
-| Finishing variance | [ ]          |
-| Referee disruption | [ ]          |
+# 5️⃣ FALSE SIGNAL DETECTION ENGINE
 
----
+## 🟢 AI ТЪРСИ:
 
-# 🟢 FINAL AI VERDICT
-
-AI избира сценария:
-
-* с най-много tactical confirmations
-* с най-много statistical confirmations
-* с най-силна calibration support
-* с най-силно matchup advantage
-* с най-нисък variance risk
-
-🔴 НЕ се избира по:
-
-* име
-* odds
-* емоция
-* public narrative
-
-🟢 Избира се:
-
-* най-подкрепеният structural scenario.
-🟢 FINAL AI DECISION
-Финалните препоръки се избират само ако:
-simulation flow ги потвърждава
-tactical matchup ги потвърждава
-calibration history ги потвърждава
-statistical signals ги потвърждават
-variance risk е приемлив
-🔴 НЕ се препоръчва пазар:
-без tactical support
-без calibration support
-само по odds movement
-само по narrative
-🟢 Препоръчва се:
-най-стабилният structural + statistical + calibrated scenario.
-# 🟢 FINAL MATCH SIMULATION RULE
-
-## 🔴 ОСНОВНО AI ПРАВИЛО
-
-След:
-
-* tactical analysis
-* statistical analysis
-* calibration matching
-* signal filtering
-* matchup validation
-
-🟢 AI ЗАДЪЛЖИТЕЛНО ПРАВИ:
-
-# FINAL NORMAL MATCH SIMULATION
+🔴 fake motivation
+🔴 fake momentum
+🔴 fake possession
+🔴 fake pressure
+🔴 fake xG inflation
+🔴 fake public narrative
+🔴 fake underdog hype
+🔴 fake upset probability
 
 ---
 
-# 🟢 КАКВО ПРЕДСТАВЛЯВА FINAL SIMULATION
+# ⬇️
 
-AI симулира:
+# 6️⃣ VARIANCE FILTER ENGINE
 
-* нормалното развитие на мача
-* expected game flow
-* tempo evolution
-* pressure shifts
-* tactical reactions
-* momentum swings
-* fatigue impact
-* substitutions
-* late-game scenarios
+## 🟢 AI ПРЕМАХВА:
 
-🔴 Симулацията НЕ е:
-
-* random score prediction
-* фиксиран резултат
-* simple upset check
-
-🟢 Симулацията е:
-
-* реалистичен football evolution model
+| Variance Type           | Purpose               |
+| ----------------------- | --------------------- |
+| random red cards        | unstable chaos        |
+| random penalties        | artificial goals      |
+| goalkeeper anomalies    | unrealistic saves     |
+| random finishing spikes | unsustainable scoring |
+| referee chaos           | game distortion       |
+| emotional randomness    | unstable reactions    |
 
 ---
 
-# 🟢 AI ИЗПОЛЗВА В СИМУЛАЦИЯТА
+# ⬇️
 
-* style collision
-* tactical matchups
-* pressure models
-* xG models
-* calibration matches
-* statistical signals
-* referee impact
-* weather impact
-* motivation intensity
-* bench impact
-* psychological reactions
-* variance risk
+# 7️⃣ CALIBRATION ENGINE
+
+# 🔴 AI НЕ РАБОТИ САМО С КАЛИБРАЦИИ
+
+Calibration е само 1 layer.
 
 ---
 
-# 🟢 FINAL SIMULATION FLOW
+## 🟢 AI СРАВНЯВА:
 
-| Match Phase          | Expected Development |
+➡️ similar tactical structures
+➡️ similar xG profiles
+➡️ similar pressure matches
+➡️ similar knockout matches
+➡️ similar favorite behavior
+➡️ similar underdog resistance
+➡️ similar tempo evolution
+➡️ similar collapse patterns
+
+---
+
+## 🟢 AI ПРОВЕРЯВА:
+
+| Calibration Type          | Validation |
+| ------------------------- | ---------- |
+| tactical calibration      | YES        |
+| statistical calibration   | YES        |
+| psychological calibration | YES        |
+| variance calibration      | YES        |
+| match flow calibration    | YES        |
+
+---
+
+# ⬇️
+
+# 8️⃣ SIGNAL VALIDATION ENGINE
+
+# 🔴 SIGNAL ENTERS FINAL BLOCK ONLY IF:
+
+✅ tactical support exists
+✅ statistical support exists
+✅ calibration support exists
+✅ matchup compatibility exists
+✅ variance acceptable
+✅ psychological logic confirmed
+✅ realistic football logic confirmed
+
+---
+
+# ⬇️
+
+# 9️⃣ STRUCTURAL ADVANTAGE ENGINE
+
+## 🟢 AI ОПРЕДЕЛЯ:
+
+| Structural Edge     | Winner |
+| ------------------- | ------ |
+| tactical structure  | [ ]    |
+| transition threat   | [ ]    |
+| defensive stability | [ ]    |
+| pressure resistance | [ ]    |
+| chance quality      | [ ]    |
+| mentality           | [ ]    |
+| bench depth         | [ ]    |
+| late-game control   | [ ]    |
+
+---
+
+# ⬇️
+
+# 🔟 MATCH FLOW SIMULATION ENGINE
+
+# 🟢 ТУК ЗАПОЧВА ФИНАЛНАТА СИМУЛАЦИЯ
+
+---
+
+## 🟢 AI СИМУЛИРА:
+
+➡️ opening phase
+➡️ first pressure phase
+➡️ tactical reactions
+➡️ momentum shifts
+➡️ psychological reactions
+➡️ fatigue evolution
+➡️ substitutions impact
+➡️ late-game pressure
+➡️ collapse risks
+➡️ final match state
+
+---
+
+## 🟢 AI СИМУЛИРА:
+
+| Match Phase          | Simulation Purpose   |
 | -------------------- | -------------------- |
-| Opening phase        | [ ]                  |
-| First-half control   | [ ]                  |
-| Momentum swings      | [ ]                  |
-| Second-half reaction | [ ]                  |
-| Late-game pressure   | [ ]                  |
-| Final match state    | [ ]                  |
+| opening minutes      | early control        |
+| first-half battle    | tactical adaptation  |
+| midfield control     | possession structure |
+| transition phase     | attacking danger     |
+| second-half reaction | mentality response   |
+| fatigue phase        | physical drop        |
+| late-game pressure   | emotional pressure   |
+| final phase          | game state outcome   |
 
 ---
 
-# 🟢 FINAL SIMULATION OUTPUT
+# ⬇️
 
-| Category              | Expected Outcome |
-| --------------------- | ---------------- |
-| Match winner tendency | [ ]              |
-| Goals tendency        | [ ]              |
-| Corner tendency       | [ ]              |
-| Card tendency         | [ ]              |
-| Shot profile          | [ ]              |
-| Possession flow       | [ ]              |
-| Momentum control      | [ ]              |
+# 1️⃣1️⃣ PSYCHOLOGICAL ENGINE
 
----
+## 🟢 AI АНАЛИЗИРА:
 
-# 🟢 FINAL RECOMMENDATION RULE
-
-След финалната симулация:
-🟢 AI избира препоръките
-САМО ако:
-
-* simulation flow ги потвърждава
-* tactical structure ги потвърждава
-* calibration matches ги потвърждават
-* statistical signals ги потвърждават
-* variance risk е приемлив
+| Psychological Factor   | Purpose             |
+| ---------------------- | ------------------- |
+| pressure reaction      | stability           |
+| conceded goal reaction | collapse risk       |
+| missed chances         | mentality           |
+| crowd influence        | emotional effect    |
+| desperation            | tactical distortion |
+| confidence             | control quality     |
 
 ---
 
-# 🟢 FINAL RECOMMENDATION TABLE
+# ⬇️
 
-| Recommendation | Simulation Support | Calibration Support | Risk Level |
-| -------------- | ------------------ | ------------------- | ---------- |
-| [ ]            | [ ]                | [ ]                 | [ ]        |
-| [ ]            | [ ]                | [ ]                 | [ ]        |
-| [ ]            | [ ]                | [ ]                 | [ ]        |
+# 1️⃣2️⃣ FINAL AI DECISION ENGINE
+
+# 🔴 AI НЕ ИЗБИРА ПО:
+
+❌ odds only
+❌ team names
+❌ media hype
+❌ fan emotions
+❌ public betting
+❌ single statistic
+❌ isolated calibration
 
 ---
 
-# 🟢 FINAL AI DECISION
+# 🟢 AI ИЗБИРА ПО:
 
-🔴 AI НЕ избира:
+✅ tactical confirmations
+✅ statistical confirmations
+✅ calibration confirmations
+✅ matchup superiority
+✅ structural stability
+✅ realistic simulation
+✅ low variance
+✅ psychological consistency
 
-* по odds
-* по име
-* по public narrative
-* по единичен фактор
+---
 
-🟢 AI избира:
+# ⬇️
 
-* най-потвърдения simulated scenario
-* най-калибрирания football structure
-* най-стабилния tactical outcome
-* най-подкрепения statistical profile
+# 1️⃣3️⃣ FINAL RECOMMENDATION ENGINE
+
+# 🔴 AI ДАВА ПРЕПОРЪКА САМО АКО:
+
+| Requirement                | Mandatory |
+| -------------------------- | --------- |
+| tactical support           | YES       |
+| statistical support        | YES       |
+| calibration support        | YES       |
+| simulation support         | YES       |
+| structural stability       | YES       |
+| acceptable variance        | YES       |
+| psychological confirmation | YES       |
+
+---
+
+# ⬇️
+
+# 1️⃣4️⃣ FINAL AI OUTPUT
+
+## 🟢 AI ИЗВЕЖДА:
+
+➡️ final structural scenario
+➡️ final match flow
+➡️ final expected outcome
+➡️ final risk level
+➡️ final variance level
+➡️ final betting recommendations
+➡️ final calibrated score ranges
+
+---
+
+# ⬇️
+
+# 1️⃣5️⃣ FINAL STATUS ENGINE
+
+## 🟢 FINAL CHECKLIST
+
+| Final Validation                | Status |
+| ------------------------------- | ------ |
+| Tactical validated              | ✅      |
+| Statistical validated           | ✅      |
+| Calibration validated           | ✅      |
+| Variance filtered               | ✅      |
+| Simulation completed            | ✅      |
+| Psychological layer validated   | ✅      |
+| Structural logic confirmed      | ✅      |
+| Final recommendations confirmed | ✅      |
+
+---
+
+# 🟢 FINAL AI CORE LOGIC
+
+# 🔴 AI МИСЛИ ТАКА:
+
+```text
+INPUT DATA
+⬇
+TACTICAL ANALYSIS
+⬇
+STATISTICAL ANALYSIS
+⬇
+MATCHUP COLLISION
+⬇
+FALSE SIGNAL FILTER
+⬇
+VARIANCE FILTER
+⬇
+CALIBRATION MATCHING
+⬇
+SIGNAL VALIDATION
+⬇
+STRUCTURAL ADVANTAGE
+⬇
+MATCH FLOW SIMULATION
+⬇
+PSYCHOLOGICAL ANALYSIS
+⬇
+FINAL AI DECISION
+⬇
+FINAL RECOMMENDATIONS
+⬇
+FINAL OUTPUT
+```
+
+---
+
+# 🟢 FINAL STATUS
+
+🟢 Fully structured
+🟢 Numbered correctly
+🟢 AI workflow ordered
+🟢 Logical sequence completed
+🟢 Simulation flow clarified
+🟢 Engine hierarchy clarified
+🟢 Final AI logic completed
+
 
 📊 ЗАДЪЛЖИТЕЛНИ  ФИНАЛНИ ПРЕПОРЪКИ ЗА ИГРА
 
