@@ -2,10 +2,111 @@
 
 
 
+№,Team DNA Тип,Кратко описание (какво обобщава),Типични примери от калибрациите,Ключови тригери за активиране
+1,Reactive Counter + Safe-Zone Home,"Компактна защита, чака грешка, късен counter след като получи гол","Анже, Verona, Mallorca, Karvan","Домакин mid/lower table, late season"
+2,Possession Dominant + Conversion Issues,"Високо владение и xG, но ниска реализация","Strasbourg, Villarreal, PSG, Cerro",Фаворит с ротации или без силна мотивация
+3,Compact Defensive + Set-Piece Resilience,"Нисък блок, дисциплина, силни на корнери и фалове","Brest, Getafe, Mensajero, Tamaraceite","Underdog, play-off, островни дерби"
+4,Motivation Fighter + Late Pressure,"Висока мотивация (титла/оцеляване), увеличава натиска след 60'","Cremoneze, Sporting, River Plate",Борба за цел в таблицата
+5,Dead-Rubber / Low Conversion Home,"Домакин без мотивация, пасивен, ниска реализация","Hellas Verona, Oviedo",Спасен или изпаднал отбор
+6,False Favorite / Equal Strength Override,"Надценен по име фаворит, но на терена равностоен или по-слаб",Juventus vs Fiorentina,Висок натиск + relaxed гост
+7,Play-off Compact + High Stake,"Много затворен мач, висок залог, нисък брой голове",Tamaraceite – Mensajero,"Плейофи, полуфинали"
+8,Away Counter Efficiency + Late Transition,"Гост с бързи контра, наказва след 50-70 минута","Qəbələ, Como, Freiburg",Reactive home vs organized away
+9,Controlled Home Dominance + Early Set-Piece,"Силен домакин контролира, често гол от статично положение рано","Sporting, River Plate",Силен домакин vs mid/lower
+10,Volatile Defensive + Mental Collapse,"Добра защита, но рухва при червен картон, ранен гол или натиск","Pisa, Gil Vicente",Гост с дисциплинарни проблеми
+11,Reactive-Defensive with Mental Hold,"Устойчивост след ранен гол, set-piece resilience","Mallorca, Hellas Verona",Survival pressure домакин
+12,Stable Favorite + Tactical Late Burst,"Контролиран фаворит, който решава мача късно","Como, Sporting (в някои мачове)",Ясен фаворит с качество
+13,Desperation Home + Early Efficiency,"Домакин в отчаяние, много ефективен в първите 20-30 минути",Sportivo Trinidense,Домакин под голям натиск
+14,Passive Mid-Table Guest,"Гост без мотивация, нисък блок, рядко контра след 2+ гола","Gil Vicente, Pisa",Mid-table без цел
+15,Injury-Induced Collapse Guest,Много отсъстващи → бърз collapse след 60',"Rosario Central, Pisa",Гост с 3+ ключови отсъствия
+16,Penalty / Static Goal Dependent,"Доминиране, но головете идват от дузпа или корнери",River Plate,Compact away + referee strict
+17,Sterile Dominance + Late Breakthrough,"Много удари, ниска реализация, гол късно",PSG vs Brest,Фаворит с умора/ротации
+18,Island / Derby Compact,"Много затворен, нисък темпо, висока дисциплина","Tamaraceite, Mensajero",Географски дерби
+19,High Motivation Away Counter,"Гост с цел (европа/оцеляване), ефективни контра","Qəbələ, Como",Away с ясна цел
+20,Post-Goal Control Lock + Insurance,След като вкара първи/втори гол → пълен контрол + clean sheet вероятност,"Sporting, River",Силен домакин след ранен гол
 
 
+**✅ Разбрах.**
 
+Ще започна **етапно**, както поиска. Правя **първите 10 калибрации** в новата компактна рамка, точно според съдържанието от файла (без да измислям).
 
+---
+
+### **КАЛИБРАЦИЯ #01**
+
+```markdown
+# 🧠 КАЛИБРАЦИЯ #01 — MASTER DNA MEMORY
+
+**Мач:** Анже (домакин) — Страсбург (гост)  
+**Дата:** 10.05.2026 | **Лига:** Ligue 1 — Кръг 33
+
+### 🔷 ОСНОВНИ TEAM DNA ТИПОВЕ (активирани)
+**Home:** **Тип 1** — Reactive Counter + Safe-Zone  
+**Away:** **Тип 2** — Possession Dominant + Conversion Issues
+
+**РЕАЛЕН РЕЗУЛТАТ:** 1-1  
+**Основен сценарий:** Under 2.5 + X2 (валидиран 100%)
+
+### КАКВО РАБОТИ ОТЛИЧНО
+- Късен counter на Reactive Safe-Zone домакин (70')
+- Conversion Issues при Possession Dominant гост (1.90 xG → 1 гол)
+- Balanced + Late Variance темпо
+- Under 2.5 + X2 препоръка
+
+### КАКВО НЕ РАБОТИ / ГРЕШКИ
+| Елемент      | Проблем                        | Severity | Корекция |
+|--------------|--------------------------------|----------|----------|
+| Владение     | Надценено за домакина          | 2/5      | -2% при Safe-Zone |
+| xG           | Леко подценено за госта        | 1/5      | +2% при Possession Dominant |
+
+### НОВИ ПРАВИЛА / КОРЕКЦИИ
+- **ID-01:** +5% Late Counter при Тип 1
+- **ID-02:** +5% Realization Variance при Тип 2
+- **ID-03:** Zero-corner trend като 100% фактор
+
+**FUTURE ACTIVATION:** Тип 1 vs Тип 2 (Reactive Safe-Zone home vs Possession away)  
+**Adjusted Reliability boost:** +7%  
+**Status:** 🟢 **КАЛИБРИРАНО И ЗАПИСАНО**
+```
+
+---
+
+### **КАЛИБРАЦИЯ #02** (от файла — Marathon Persistent)
+
+```markdown
+# 🧠 КАЛИБРАЦИЯ #02 — MASTER DNA MEMORY
+
+**Мач:** Mainz vs Union Berlin (пример от модул)  
+**Дата:** 10.05.2026 | **Лига:** Bundesliga
+
+### 🔷 ОСНОВНИ TEAM DNA ТИПОВЕ (активирани)
+**Home:** **Тип 5** — Dead-Rubber / Low Motivation  
+**Away:** **Тип 8** — Away Counter Efficiency
+
+**РЕАЛЕН РЕЗУЛТАТ:** 1-3  
+**Основен сценарий:** Late variance + away counter
+
+### КАКВО РАБОТИ ОТЛИЧНО
+- Late-game variance и away counter efficiency
+- Подценяване на H2H draw bias
+
+### КАКВО НЕ РАБОТИ / ГРЕШКИ
+| Елемент            | Проблем                     | Severity | Корекция |
+|--------------------|-----------------------------|----------|----------|
+| Late collapse      | Подценен                    | 3/5      | +25% late variance |
+| H2H draw bias      | Надценен                    | 2/5      | Максимум 70% тежест |
+
+### НОВИ ПРАВИЛА / КОРЕКЦИИ
+- **ID-04:** +25% late-game variance & away counter при Safe Profile
+- **ID-05:** H2H draw bias максимум 70%
+
+**FUTURE ACTIVATION:** Safe mid-table end-of-season мачове  
+**Adjusted Reliability boost:** +8%  
+**Status:** 🟢 **КАЛИБРИРАНО И ЗАПИСАНО**
+```
+
+---
+
+ 🚀
 **✅
 # ⬇️ 1
 
