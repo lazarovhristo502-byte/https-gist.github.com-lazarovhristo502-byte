@@ -37,7 +37,7 @@
 Линк 1 (Калибрация 1 + основни правила):
 https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/0.7-calibraciq.md
 Линк 2 (Калибрация 2 + всички детайлни калибрации):
-https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/64-calibracii.md
+https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/0.7-calibraciq.md
 
 Процедура (точно така се прави всеки път):
 Отварям Линк 1 → чета правилата за Калибрация 1.
@@ -1151,8 +1151,8 @@ CONFIDENCE:
 
 **Status:** 🟢 **100%** (Глобалното въведение за калибрацията е активирано и задължително за всички бъдещи анализи)
 
-#0.8 КАЛИБРАЦИЯ 1 ВЛИЗА СЕ ПРЕЗ ЛИНКА ПРЕГЛЕЖДАТ СЕ ВСИЧКИ КАЛИБРАЦИ  И СЕ ТЪРСЯТ СХОДНИ ОТБОРИ СЪСЪ ТЕЗИ НА КОИТО СЕ ПРАИ АНЛИЗ СЕГА КОГАТО СЕ НАМЕРЯТ СХОДНИ ОТБОРИ СЕ ВЗЕМАТ ТЯХНИТЕ КАЛИБРАЦИИ БЕЗ ЗНАЧЕНИ КОЛКО МОЖЕ ДА СА НЕОГРАНЕЧЕН БРОПИ ВСИЧКИ КОИТО СА СХОДНИ И СЕ ИЗПИСВАТ НОМЕРАТА НА КАЛОИБРАЦИИИТЕ КОИТО СЕ ИЗПШЛЗВАТ ВЛИЗА С Е ПРЕЗ ТОЗИ ЛИНК ЗАДУЛЖИТЕЛНО ЗА КАЛОИБРАЦИЯ 1 ВЪТРЕ СА ВСИЧКИ ПРАВИЛА ПО КОИТО СЕ РАБОТИ С КАЛИБРАЦИТЕ ВЛИЗАШ ПЪРВО ТАМ ЗА ДА ЗНАЕШ КАК СЕ РАБОТИ С ТЯХ И ПСЛЕ ПРЕЗ КАЛИБРАЦИЯ 2  https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/0.7-calibraciq.md
-
+#0.8 КАЛИБРАЦИЯ 1 ВЛИЗА СЕ ПРЕЗ ЛИНКА ПРЕГЛЕЖДАТ СЕ ВСИЧКИ КАЛИБРАЦИ  И СЕ ТЪРСЯТ СХОДНИ ОТБОРИ СЪСЪ ТЕЗИ НА КОИТО СЕ ПРАИ АНЛИЗ СЕГА КОГАТО СЕ НАМЕРЯТ СХОДНИ ОТБОРИ СЕ ВЗЕМАТ ТЯХНИТЕ КАЛИБРАЦИИ БЕЗ ЗНАЧЕНИ КОЛКО МОЖЕ ДА СА НЕОГРАНЕЧЕН БРОПИ ВСИЧКИ КОИТО СА СХОДНИ И СЕ ИЗПИСВАТ НОМЕРАТА НА КАЛОИБРАЦИИИТЕ КОИТО СЕ ИЗПШЛЗВАТ ВЛИЗА С Е ПРЕЗ ТОЗИ ЛИНК ЗАДУЛЖИТЕЛНО ЗА КАЛОИБРАЦИЯ 1 ВЪТРЕ СА ВСИЧКИ ПРАВИЛА ПО КОИТО СЕ РАБОТИ С КАЛИБРАЦИТЕ ВЛИЗАШ ПЪРВО ТАМ ЗА ДА ЗНАЕШ КАК СЕ РАБОТИ С ТЯХ И ПСЛЕ ПРЕЗ КАЛИБРАЦИЯ 2  
+](https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/0.7-calibraciq.md)
 Какво препоръчвам да направиш сега (за да мога да виждам всичко добре):
 
 Създай нов файл (нов gist) с име например:
@@ -1161,8 +1161,8 @@ calibrations-database.md или specific-calibrations-v63.md
 Качи го и ми дай новия raw линк.
 Отсега нататък в Block 0.7 ще пиша така:
 Калибрация 1 → от основния линк
-Калибрация 2 + конкретни #XX → от новия линк https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/64-calibracii.md
-
+Калибрация 2 + конкретни #XX → от новия линк 
+](https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/0.7-calibraciq.md)
 
 Така ще ми е много по-удобно и по-бързо да търся и прилагам точните калибрации.
 
