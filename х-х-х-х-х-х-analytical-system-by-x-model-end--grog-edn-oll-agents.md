@@ -35,9 +35,7 @@
 
 Винаги се влиза през линковете (НЕ се запомня, НЕ се измисля):
 Линк 1 (Калибрация 1 + основни правила):
-https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/0.7-calibraciq.md
-Линк 2 (Калибрация 2 + всички детайлни калибрации):
-https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/0.7-calibraciq.md
+
 
 Процедура (точно така се прави всеки път):
 Отварям Линк 1 → чета правилата за Калибрация 1.
