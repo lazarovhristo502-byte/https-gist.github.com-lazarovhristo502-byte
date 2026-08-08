@@ -2,7 +2,7 @@
 
 
 
-
+https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/64-calibracii.md
 
 **Ето пълния, готов за копиране стартов въпрос**  
 (не е кратък – това е пълната версия, която дава солидна основа за правилно и задълбочено запознаване със системата):
