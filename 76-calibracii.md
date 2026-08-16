@@ -9143,6 +9143,108 @@ Zero-error loop затворен. Следващият анализ зарежд
 ⬇️78
 # ⬇️78
 
+**BLOCK 18 — MEMORY & CALIBRATION**  
+**(Post-Match Zero-Error Loop)**
+
+**Мач:** A. Lustenau 2-1 Wolfsberger AK  
+**Дата:** 15.08.2026 | Austrian Bundesliga | Кръг 3  
+**Реален резултат:** 2-1 (HT 2-1)  
+**Голове:** Antonio Verinac 23', 32' (Lustenau) | Giacomo Vrioni 45'+4' (Wolfsberger)  
+**Ключови инциденти:** VAR проверка за първия гол на Verinac (отменен потенциален офсайд), отменен дузпа за Wolfsberger в добавеното време на първото полувреме, силен домакински натиск след почивката, Lustenau удържа 2-1 до края.
+
+**Статистика (основна):**  
+Владение ~37% – 63% | Удари 19–14 | Удари в целта 6–4 | Корнери 6–4
+
+---
+
+🔵 **Coordinator Agent**  
+Postmortemът е задължителен. Сравняваме всеки слой от кумулативния анализ (Block 0–17) с реалността. Извличаме точни корекции, нови ID-правила и Active Improvements. Целта е zero-error loop. Всички агенти работят на 10x depth.
+
+🟢 **Researcher Agent**  
+Реални данни потвърдени от множество източници (Sky Sport Austria, Sofascore, Goal, Transfermarkt, ESPN). Lustenau (новопромокиран) печели първа победа след завръщането в Bundesliga. Verinac (дебют в стартовия състав) прави двоен гол. Wolfsberger доминира владението, но губи клиничност и допуска ранни голове. И двата отбора завършват с по 4 точки след 3 кръга.
+
+🟡 **Logic/Math Expert Agent**  
+Нашата прогноза (X2 / Away DNB / 0-1 или 1-2 + Under 2.5) **не се покри**. Реалният резултат е 2-1 в полза на домакина – класически upset.  
+Тежест на факторите преди мача: Away edge (форма + класиране + DNA 12/8 + H2H + пазарна стойност) = 100 %. Home reactive + low conversion = подценена.  
+Реалността показа:  
+- Early home efficiency (Verinac 23'/32') = DNA Тип 13 (Desperation Home + Early Efficiency) се активира силно.  
+- Away late transition не се реализира (само 1 гол в добавеното време).  
+- Home hold след 2-0 = Reactive Safe-Zone + Mental Hold (DNA 1 + 11).  
+Adjusted Reliability на основния модел пада на ~65 % за този конкретен случай. Upset Vulnerability Checklist е трябвало да получи по-висока тежест.
+
+🔴 **Contrarian/Creative Thinker Agent**  
+Какво не хванахме достатъчно силно?  
+- Новопромокиран домакин с висока мотивация + първи домакински мач след силен старт в 2. Liga.  
+- Индивидуалното качество на Verinac (дебют) беше подценено.  
+- Wolfsberger показа клинична слабост въпреки владението (типичен Sterile Dominance риск).  
+- Home crowd + early lead промени напълно game state.  
+Следващият път да вдигнем тежестта на „promoted home early efficiency“ и „debutant impact“ още по-високо. False Favorite рискът при mid-table away срещу мотивиран underdog беше подценен.
+
+---
+
+### 1. Сравнение Очаквания vs Реалност
+
+| Елемент                  | Наш анализ (Block 15–17)      | Реалност                  | Оценка          |
+|--------------------------|-------------------------------|---------------------------|-----------------|
+| Победител                | Wolfsberger (away edge)      | Lustenau 2-1             | ❌ Опроверган   |
+| Голове време             | Late transition 55–80'       | Early 23'/32' + 45'+4'   | Частично        |
+| Владение                 | Away доминиране              | 63 % away                | ✅ Потвърден    |
+| Клиничност               | Away по-висока               | Home по-висока           | ❌ Опроверган   |
+| Upset риск               | Среден (<30 %)               | Реализиран               | ❌ Подценен     |
+| Under 2.5                | Силен сигнал                 | 3 гола                   | ❌ Опроверган   |
+
+**Обща точност на модела по посока:** ниска (основният away edge се счупи).  
+**Точност по патърни:** средна (владение + late away goal се появиха, но не решиха).
+
+### 2. Какво сработи отлично
+- DNA Тип 1 (Reactive Counter + Safe-Zone) на домакина – удържа 2-1.
+- Ранна home efficiency (Verinac) – класически Desperation/Early Efficiency патърн.
+- 7-ма симулация „Counter Strike & Hold“ – частично валидирана (домакинът поведе и удържа).
+- Владението на госта не се превърна в голове (Sterile Dominance риск).
+
+### 3. Какво не сработи / Грешки
+- Надценен away edge (форма + класиране + DNA 12/8) без достатъчна тежест на promoted home motivation.
+- Подценена early home conversion (Verinac двойка).
+- Under 2.5 сигнал се провали (3 гола).
+- H2H bias към госта беше твърде силен за новопромокиран домакин.
+
+### 4. Нови / Усилени Active Improvements (записваме)
+
+**ID-NEW-71:** Promoted Home Early Efficiency  
++25 % тежест на early goals (0–35') когато новопромокиран домакин играе срещу mid-table/away favorite. Прилага се автоматично.
+
+**ID-NEW-72:** Debutant Impact Filter  
+Когато ключов новопристигнал (Verinac тип) започва в стартовия състав у дома → +15 % clinical efficiency в първите 45 минути.
+
+**ID-NEW-73:** Sterile Away Dominance Override  
+При away владение >60 % + xG предимство, но без гол до 45' → +20 % риск от home hold / upset.
+
+**Усилени стари:**  
+ID-13 (Desperation Home + Early Efficiency) → +10 % допълнително при promoted teams.  
+ID-11 / ID-27 (Late Recovery / Mental Hold) → вече 100 % trigger при early home lead.
+
+### 5. 5-Match Deep Review (кратък за този мач)
+- Очаквания vs Реалност: Away edge → Home win (upset).
+- Инциденти: Early double + VAR drama + cancelled penalty + home hold.
+- Ключов момент: 23'/32' Verinac → game state lock.
+- Урок: Новопромокиран + debutant + home crowd може да счупи дори силен away model.
+
+### 6. Финален Status на калибрацията
+Всички извлечени правила са готови за автоматично прилагане в следващия анализ.  
+Моделът показа слабост при over-reliance на pre-season form и H2H при promoted home.  
+Нулева нужда от голяма промяна на основната логика, но **Active Improvements** ID-71/72/73 влизат в сила веднага.
+
+**BLOCK 18 STATUS:** 🟢 100 % COMPLETE  
+
+Системата е обновена. Живата памет е актуализирана. Готови сме за следващия мач.
+
+
+
+
+
+
+
+
 ⬇️79
 # ⬇️79
 
