@@ -2516,6 +2516,10 @@ calibrations-database.md или specific-calibrations-v63.md
 Така ще ми е много по-удобно и по-бързо да търся и прилагам точните калибрации.
 
 
+АКО ДРУГИТЕ ЛИНКОВЕ НЕ СЕ ОТВРЯТ ВЛИЗАШ ПРЕЗ ТОЗИ КАЛИБРАЦИЯ 
+
+ 
+3-- https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/76-calibracii.md
 
 
 
