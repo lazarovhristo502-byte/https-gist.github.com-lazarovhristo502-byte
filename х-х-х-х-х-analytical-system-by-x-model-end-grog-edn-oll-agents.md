@@ -1180,9 +1180,17 @@ MASTER CALIBRATION се предава като **базова настройк�
 ##КАЛИБРАЦИЯ 1 ВЛЕЗА ; https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/1-calibraciq-analytical-system.md
 
 ## КОГАТО ИЗЛЕЗЕШ ВЛЕЗ ВЪВ СЕЛЕКЦИЯТА КАЛИБРАЦИЯ 2 ВСИЧКО НАУЧЧЕНО И ЗПАОМНЕНО ОТ КАЛИБРАЦИТЕ СЕ ПРИЛАГА ВЪВ АНАЛИЗА 
-##КАЛИБРАЦИЯ 2 ВЛЕЗ ;
-[[calibraciq-analytical system.md](https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/calibraciq-analytical%20system.md)](https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/calibraciq-analytical%20system.md)
+##КАЛИБРАЦИЯ 2 ВЛЕЗ ;  ВЛИЗАШ ВУВ НОМЕР 1 ПОСЛЕ ВУВ НОМЕР 2 ПОСЛЕ ВУВ НОМЕР 3 КАЛИБРАЦИ И НАМИРАШ ПОДОРБНО ИНФОРМАЦИЯ ЧЕТЕШ ДО ПОСЛЕДНАТА И ВАДИШ СХОДНИТЕ ЗА НАШИЯ АНЛИЗ РАБРАЛИ ГРОГ ....
 
+
+
+1- [[calibraciq-analytical system.md](https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502   
+
+
+2-  byte/refs/heads/main/calibraciq-analytical%20system.md)](https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/calibraciq-analytical%20system.md)
+
+
+3- https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/76-calibracii.md
 **Правило за използване:**  
 - Това въведение + линкът се зарежда **веднага** в началото на **Block 0**.  
 - Във всеки следващ блок (1–17) Grok **задължително** споменава с **bold** кои Active Improvements се прилагат и как точно влияят върху анализа.  
