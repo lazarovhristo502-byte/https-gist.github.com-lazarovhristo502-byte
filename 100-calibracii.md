@@ -97,7 +97,7 @@
 #### **Как точно работя (стъпка по стъпка – лесно и ясно):**
 
 1. **Отварям файла директно**  
-   (raw линк: https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/64-calibracii.md)
+  
 
 2. **Търся всички калибрации** (от #1 до последната) и **сканирам за сходство** с текущия мач по следните критерии (по ред на важност):
    - Тип отбор (домакин / гост) – Team DNA (Reactive Counter, Possession Dominant, Late Desperation Surge и т.н.)
@@ -140,7 +140,7 @@
 Кажи ми **конкретния мач** (домакин – гост + лига/дата), и аз веднага стартирам:
 
 1. Имена на отборите  
-2. **Block 0.7 Visible Calibration Gate** (с пълна проверка на 64-calibracii.md и всички сходни, вкл. #43 ако пасва)  
+2. **Block 0.7 Visible Calibration Gate** (  
 3. Пълен анализ по правилата ти.
 
 Дай мача! Сега всичко е ясно и оправено. 🚀
@@ -726,7 +726,6 @@ similarity confirmed
 
 GROG ВЛИЗАШ ПРТЕЗ ТОЗИ ЛИНК АВТОМАТИЧНО ЗА ДА ПОЛУЧИШ ПЪЛНЕ ДОСТЪП ДО ВСИЧКИ КАЛИБРАЦИИ 
 
-64 https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/64-calibracii.md
 
 
 
