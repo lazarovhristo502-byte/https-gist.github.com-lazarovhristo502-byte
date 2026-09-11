@@ -169,7 +169,16 @@
 
 
 
-https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/64-calibracii.md
+
+vlizash prez 1 link I se zapoznawa[ sus 100 te kalibraci podobno zapametqwash i izpolzwash vuv analizte posle wlizash iwuw 2 link s kalibraci i pak zapametqwwash i izpolzwash www analýza 
+
+
+
+
+
+
+https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/100-calibracii.md
+https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/101-calibracii.md
 **Ето пълния, готов за копиране стартов въпрос**  
 (не е кратък – това е пълната версия, която дава солидна основа за правилно и задълбочено запознаване със системата):
 
@@ -1177,20 +1186,32 @@ MASTER CALIBRATION се предава като **базова настройк�
 
 **Източник на всички подобрения:**  
 ##ПЪРВО СЕ ВЛИЗА В КАЛИБРАЦИЯ 1 КЪДЕТО СА ВСИЧКИ ОРИГИНАЛИ ДА СЕ ЗАПОЗНАЕ ГРОГ СЪСЪ ТЯХ ПДОРБНО СЛЕД ТОВА КАЛИБРАЦИЯ 2 КЪДЕТО СА СЕЛЕКРТИРАТ КАК СЕ РАБОТИ ПОДОРБНО С КАЛИБРАЦИЯТА И СЕ ПРИЛАГА ВЪВ АНАЛИЗА 
-##КАЛИБРАЦИЯ 1 ВЛЕЗА ;[[ https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/1-calibraciq-analytical-system.md](https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/100-calibracii.md)
+##КАЛИБРАЦИЯ 1 ВЛЕЗА ;
+vlizash prez 1 link I se zapoznawa[ sus 100 te kalibraci podobno zapametqwash i izpolzwash vuv analizte posle wlizash iwuw 2 link s kalibraci i pak zapametqwwash i izpolzwash www analýza 
+
+
+
+
+
+
+https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/100-calibracii.md
+https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/101-calibracii.md
 ](https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/100-calibracii.md)
 ## КОГАТО ИЗЛЕЗЕШ ВЛЕЗ ВЪВ СЕЛЕКЦИЯТА КАЛИБРАЦИЯ 2 ВСИЧКО НАУЧЧЕНО И ЗПАОМНЕНО ОТ КАЛИБРАЦИТЕ СЕ ПРИЛАГА ВЪВ АНАЛИЗА 
 ##КАЛИБРАЦИЯ 2 ВЛЕЗ ;  ВЛИЗАШ ВУВ НОМЕР 1 ПОСЛЕ ВУВ НОМЕР 2 ПОСЛЕ ВУВ НОМЕР 3 КАЛИБРАЦИ И НАМИРАШ ПОДОРБНО ИНФОРМАЦИЯ ЧЕТЕШ ДО ПОСЛЕДНАТА И ВАДИШ СХОДНИТЕ ЗА НАШИЯ АНЛИЗ РАБРАЛИ ГРОГ ....
 
 
 
-1- [[[calibraciq-analytical system.md](https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502   
 
-](https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/100-calibracii.md)
-2-  [byte/refs/heads/main/calibraciq-analytical%20system.md)](https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/calibraciq-analytical%20system.md)
-](https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/100-calibracii.md)
+vlizash prez 1 link I se zapoznawa[ sus 100 te kalibraci podobno zapametqwash i izpolzwash vuv analizte posle wlizash iwuw 2 link s kalibraci i pak zapametqwwash i izpolzwash www analýza 
 
-3-[ https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main](https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/100-calibracii.md)/76-calibracii.md
+
+
+
+
+
+1- https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/100-calibracii.md
+2- https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/101-calibracii.md
 **Правило за използване:**  
 - Това въведение + линкът се зарежда **веднага** в началото на **Block 0**.  
 - Във всеки следващ блок (1–17) Grok **задължително** споменава с **bold** кои Active Improvements се прилагат и как точно влияят върху анализа.  
