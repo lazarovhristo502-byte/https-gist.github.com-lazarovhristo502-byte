@@ -555,7 +555,7 @@ Reliability тук е временен старт 100. Реже се после 
 
 Каталог преди Block 0, вътрешно:
 ЛИНК 1 https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/100-calibracii.md 100
-ЛИНК 2 https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/101-calibracii.md
+ЛИНК 2 https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/101-calibracii.md 101
 ЛИНК 3 [СЛОТ] или НЯМА
 ЛИНК 4 [СЛОТ] или НЯМА
 ЛИНК 5 [СЛОТ] или НЯМА
