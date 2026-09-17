@@ -110,13 +110,16 @@ X MODEL v3.5 е ЕДНА ЦЯЛОСТНА ХИБРИДНА АНАЛИТИЧНА 
 
 ИИ използва двата предоставени входа/линка за достъп до калибрационната база:
 
-### КАЛИБРАЦИОНЕН ЛИНК 1:
+### КАЛИБРАЦИОНЕН ЛИНК 1
 
-[ТУК СЕ ПОСТАВЯ ЛИНК 1]
+
+https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/100-calibracii.md
+
 
 ### КАЛИБРАЦИОНЕН ЛИНК 2:
 
-[ТУК СЕ ПОСТАВЯ ЛИНК 2]
+
+https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/101-calibracii.md
 
 Тези калибрации съдържат реално натрупана информация от предишни анализи и реални завършили мачове:
 
