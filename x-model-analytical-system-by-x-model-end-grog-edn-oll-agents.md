@@ -1520,6 +1520,7 @@ Flashscore поддържа H2H данни наред с резултати, с�
 
 # 🟦 3.7 — СЪБИРАНЕ НА ВСИЧКИ СХОДНИ КАЛИБРАЦИИ
 
+
 Това е много важно правило:
 
 > **Нито една сходна калибрация не се избира предварително като „главна“, ако има други релевантни калибрации.**
@@ -1543,6 +1544,13 @@ Flashscore поддържа H2H данни наред с резултати, с�
 **Какво показва цялата съвкупност от сходни реални мачове, а не една избрана калибрация?**
 
 ---
+КАЛИБРАЦИЯ 1 ВЛИЗА СЕ ПРЕЗ ЛИНКА - 
+
+https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/100-calibracii.md
+
+КАЛИБРАЦИЯ 2 ВЛИЗА СЕ ПРЕЗ ЛИНКА 
+https://raw.githubusercontent.com/lazarovhristo502-byte/https-gist.github.com-lazarovhristo502-byte/refs/heads/main/101-calibracii.md
+
 
 # 🟦 3.8 — „ДОЗА КЪСМЕТ“ / НЕОПРЕДЕЛЕНОСТ
 
